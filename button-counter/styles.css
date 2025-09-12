@@ -1,0 +1,40 @@
+body {
+    color: #222;
+    font-family: sans-serif;
+    background-color: slateblue;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    gap: 15px;
+}
+
+#decrease,
+#increase,
+#reset {
+    border-radius: 25px;
+    width: 120px;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#decrease:active,
+#increase:active,
+#reset:active {
+    border-radius: 25px;
+    width: 120px;
+
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
