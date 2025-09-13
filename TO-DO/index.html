@@ -10,16 +10,17 @@
     <main class="container">
         <ul id="list">
             <li>
-                <input type="checkbox" id="checkbox">task 1
+                <input type="checkbox" class="checkbox"> task 1
             </li>
 
             <li>
-                <input type="checkbox" id="checkbox">task 2
+                <input type="checkbox" class="checkbox"> task 2
             </li>
         </ul>
-        <button id="addElement">Add new task to the list</button>
-        <button id="removeElements">Remove the selected tasks</button>
-        <input type="text" style="display: none" id="elementInput" placeholder="insert new task">
+        <button id="addElement" tabindex="0">Add new task to the list</button>
+        <button id="removeElements" tabindex="0">Remove the selected tasks</button>
+        <input type="text" style="display: none" id="elementInput" placeholder="insert new task" tabindex="0">
+        <input type="submit" value="add" id="submit" style="display: none;">
     </main>
     <script src="script.js"></script>
 </body>

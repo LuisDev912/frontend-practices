@@ -22,7 +22,7 @@ li{
 }
 
 /* This style is from Uiverse.io by aasisodiya */
-button {
+button, #submit {
     align-self: flex-end;
     background-color: #eee;
     border: none;
@@ -35,14 +35,25 @@ button {
     cursor: pointer;
 }
 
-button:active {
+button:active,
+#submit:active {
     color: white;
     box-shadow: 0 0.2rem #dfd9d9;
     transform: translateY(0.2rem);
 }
 
-button:hover{
+button:hover,
+#submit:hover{
     background: rgb(236, 197, 197);
     color: white;
     text-shadow: 0 0.1rem #bcb4b4;
+}
+
+#elementInput{
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 10em;
 }
