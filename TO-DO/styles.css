@@ -1,15 +1,17 @@
 .container{
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
     gap: 25px;
     border: solid 1px #ccc;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     padding: 10px;
+    min-height: 150px;
 }
 
 #list{
-    padding-left: 85px;
+    padding-left: 55px;
 }
 
 li{
@@ -19,6 +21,28 @@ li{
     white-space: normal;
 }
 
-button{
+/* This style is from Uiverse.io by aasisodiya */
+button {
     align-self: flex-end;
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+button:hover{
+    background: rgb(236, 197, 197);
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
 }
