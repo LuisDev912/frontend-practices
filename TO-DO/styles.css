@@ -1,7 +1,24 @@
 .container{
     display: flex;
-    align-items: center;
-    gap: 15px;
-    min-width: 70px;
-    border: solid 3px;
+    flex-flow: row wrap;
+    gap: 25px;
+    border: solid 1px #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#list{
+    padding-left: 85px;
+}
+
+li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.30em;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+button{
+    align-self: flex-end;
 }
