@@ -30,3 +30,12 @@ submit.addEventListener('click', () => {
     input.style.display = "none"
     submit.style.display = "none"
 });
+
+deleteElements.addEventListener('click', () => {
+    const tasks = document.querySelectorAll("#list li input[type='checkbox']");
+    tasks.forEach(task => {
+        if (task.checked) {
+            task.parentElement.remove();
+        }
+    });
+});

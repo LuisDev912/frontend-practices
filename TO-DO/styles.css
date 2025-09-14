@@ -51,8 +51,6 @@ button:hover,
 
 #elementInput{
     align-self: flex-end;
-    overflow-wrap: break-word;
-    white-space: normal;
     padding: 0.5rem;
     font-size: 1rem;
     width: 10em;
