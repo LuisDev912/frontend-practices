@@ -1,5 +1,3 @@
-const container = document.querySelector('.container');
-const list = document.getElementById('list');
 const checkbox = document.querySelectorAll('.checkbox');
 const input = document.getElementById('elementInput');
 const item = document.getElementsByTagName('li');
