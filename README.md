@@ -9,6 +9,7 @@ Here you'll find personal projects using **HTML, CSS and JavaScript**
 
 - `/index.html` -> Main page to browse my web proyects.
 - `button-counter` -> Folder of the first project. 
+- `TO-DO` -> Folder of the second project.
 - `REAMDE.md` -> This file.
 - `LICENSE` -> MIT license.
 
