@@ -17,10 +17,13 @@ submit.addEventListener('click', () => {
 
     const li = document.createElement('li');
     const newCheckbox = document.createElement('input');
+    const label = document.createElement('label');
     newCheckbox.type = 'checkbox';
+    newCheckbox.setAttribute('class', 'checkbox')
 
     li.appendChild(newCheckbox);
-    li.appendChild(document.createTextNode(input.value));
+    label.appendChild(document.createTextNode(input.value));
+    li.appendChild(label);
 
     list.appendChild(li);
     input.value = '';
