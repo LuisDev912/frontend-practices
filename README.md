@@ -21,6 +21,8 @@ Each project is stored in its own folder
 
 - `button-counter` -> Folder of the first project. 
 - `TO-DO` -> Folder of the second project.
+- `shopping-list` -> Folder of the third project.
+- `card-generator` -> Folder of the fourth project.
 
 ---
 
