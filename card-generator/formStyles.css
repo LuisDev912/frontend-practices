@@ -1,6 +1,7 @@
 /*IDs of the inputs:
 #title (text)
 #photoSelector (file)
+#subtitle (text)
 #description (textarea)
 */
 
@@ -30,7 +31,7 @@ label {
     color: #1F2937;
 }
 
-#title, #photoSelector, #description {
+#title, #photoSelector, #description, #subtitle {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
@@ -38,4 +39,15 @@ label {
     border-radius: 4px;
     font-size: 1.5em;
     color: #606266;
+}
+
+#title::placeholder, #subtitle::placeholder, #description::placeholder {
+    color: #9CA3AF;
+    font-style: italic;
+}
+
+#title:focus, #photoSelector:focus, #description:focus, #subtitle:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
