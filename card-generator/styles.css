@@ -35,3 +35,25 @@ a{
     text-decoration: none;
     color: white;
 }
+
+#exampleCard{
+    min-width: 25%;
+    max-width: 50%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5% auto;
+    padding: 20px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+img{
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
