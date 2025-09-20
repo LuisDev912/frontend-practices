@@ -1,8 +1,41 @@
+/*IDs of the inputs:
+#title (text)
+#photoSelector (file)
+#description (textarea)
+*/
+
+body{
+    background-color: #E5E7EB;
+    font-family: 'Poppins', sans-serif;
+    color: #374151;
+}
+
+h1{
+    color: #1E3A8A; 
+}
+
 form{
     max-width: 75%;
     margin: 20px auto;
     padding: 30px;
     border: 1px solid #ddd;
-    background-color: #ffffff;
+    background-color: #F9FAFB;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+#title, #photoSelector, #description {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    font-size: 1.5em;
+    color: #606266;
 }

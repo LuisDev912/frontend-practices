@@ -64,7 +64,8 @@ a{
     max-width: 300px;
     padding: 15px;
     height: auto;
-    background-color: #FFFFFF;
+    background-color: #F9FAFB;
+    border: solid 1px #CBD5E1;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -85,7 +86,7 @@ a{
 
 #card p {
     font-size: 0.95em;
-    color: #4B5563;
+    color: #1F2937;
     line-height: 1.4;
     margin: 0 0 10px;
 }
