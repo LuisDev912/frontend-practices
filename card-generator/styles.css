@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Importing Google Font Poppins */
+
 body{
     background-color: #E5E7EB;
+    font-family: 'Poppins', sans-serif;
+    color: #374151;
 }
 
 h1{
-    color: #1E3A8A;
-    text-decoration:underline;
+    color: #1E3A8A; /* azul profundo */
+    text-decoration: underline;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    margin-top: 20px;
 }
 
+/* button styles */
 button{
     display: block;
     margin: 20px auto;
@@ -33,41 +38,60 @@ button:active{
 
 a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
-#card{
-    min-width: 25%;
-    width: 30%;
+/*card styles*/
+#cardContainer{
+    background-color: #FFFFFF;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    border: 2px solid #E5E7EB;
+    font-size: 1.2em;
+    overflow-wrap: break-word;
+    gap: 20px;
+}
+
+#card { /* changed the order, the card style was first and the container second */
+    flex: 1 1 260px;
+    max-width: 300px;
+    padding: 15px;
     height: auto;
-    background-color: white;
-    border-radius: 10px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 5% auto;
     text-align: center;
+    transition: transform 0.2s, ease, box-shadow 0.2s ease;
 }
 
-img{
-    width: 75%;
+#card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* card content styles */
+#card img {
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-#cardContainer{
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    margin-bottom: 20px;
-    background-color: #F3F4F6;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    border: 2px solid #E5E7EB;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    overflow-wrap: break-word;
-    gap: 15px;
+#card p {
+    font-size: 0.95em;
+    color: #4B5563;
+    line-height: 1.4;
+    margin: 0 0 10px;
+}
+
+#card h2 {
+    font-size: 1.3em;
+    color: #1E3A8A;
+    margin-bottom: 10px;
 }
