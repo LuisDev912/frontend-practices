@@ -10,6 +10,13 @@ form.addEventListener('submit', (e) => {
     const subtitle = document.getElementById('subtitle').value;
     const description = document.getElementById('description').value;
 
+
+
+    if (file.size > MAX_SIZE_BYTES) {
+        alert(`This photo exceds the space limit: ${MAX_SIZE_MB} MB`);
+        return;
+    }
+
     const reader = new FileReader();
     reader.onload = () => {
         const photo = reader.result;
