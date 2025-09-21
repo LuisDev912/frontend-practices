@@ -60,7 +60,7 @@ a{
 }
 
 #card { /* changed the order, the card style was first and the container second */
-    flex: 1 1 260px;
+    flex: 1 1 auto;
     max-width: 300px;
     padding: 15px;
     height: auto;
