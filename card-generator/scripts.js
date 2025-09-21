@@ -2,14 +2,14 @@ const form = document.getElementById('cardForm');
 const MAX_SIZE_MB = 1; // 1 MB
 const MAX_SIZE_BYTES = MAX_SIZE_MB * 1024 * 1024;
 
-form.addEventListener('submit', (e) => {
-    e.defaultPrevented();
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
     const title = document.getElementById('title').value;
     const photoInput = document.getElementById('photoSelector');
     const subtitle = document.getElementById('subtitle').value;
     const description = document.getElementById('description').value;
-
+    const file = photoInput.files[0];
 
 
     if (file.size > MAX_SIZE_BYTES) {
@@ -28,6 +28,15 @@ form.addEventListener('submit', (e) => {
             description
         };
 
-        //I'll use localStorage to store the card data temporarily, but later
+        let cards = JSON.parse(localStorage.getItem('cards')) || [];
+        cards.push(card);
+        localStorage.setItem('cards', JSON.stringify(cards));
+
+        form.reset();
+        alert('Card created successfully!');
+
+        //redirect to index.html
+        window.location.href = "index.html";
     };
+    reader.readAsDataURL(file);
 });
