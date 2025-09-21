@@ -33,22 +33,6 @@ form.addEventListener('submit', (event) => {
         cards.push(card);
         localStorage.setItem('cards', JSON.stringify(cards));
 
-        // create card and show it in index.html
-
-        // const container = document.querySelector('#cardContainer');
-        // const cardElement = document.createElement('div');
-        // cardElement.setAttribute('id', 'card');
-        // cardElement.innerHTML = `
-        // <h2>${card.title}</h2>
-        // <img src="${card.photo}" alt="${card.title}">
-        // <h3>${card.subtitle}</h3>
-        // <p>${card.description}</p>
-        // `;
-
-        // container.appendChild(cardElement);
-        // there's an error here, because cardContainer is in index.html, not in card-generator.html
-        // So, I'll create two JS files: one to store the data and another to show the card.
-
         form.reset();
         alert('Card created successfully!');
 
