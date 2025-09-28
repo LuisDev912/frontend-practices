@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <title>Shop List</title>
 </head>
+
 <body>
     <h1>Shop List</h1>
+    <button id="toggle-mode" aria-pressed="false">Toggle dark mode</button>
 
-    <table id="table">
+    <table aria-label="Shopping list" id="table">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Amount</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody id="table-body">
             <tr>
-                <td><input type="text" placeholder="Product" tabindex="0"></td>
-                <td><input type="number" placeholder="$" tabindex="0" min="0"></td>
-                <td><input type="number" placeholder="1" min="1" value="1"></td>
+                <td>
+                    <label for="product-name" class="sr-only">Product name</label>
+                    <input id="product-name" type="text" placeholder="Product">
+                </td>
+
+                <td>
+                    <label for="product-price" class="sr-only">Product price</label>
+                    <input id="product-price" type="number" placeholder="$" min="0">
+                </td>
+
+                <td>
+                    <label for="product-amount" class="sr-only">Product amount</label>
+                    <input id="product-amount" type="number" placeholder="1" min="1" value="1">
+                </td>
+
+                <td>
+                    <label for="delete-product" class="sr-only">Delete product</label>
+                    <button id="delete-product" class="deleteBtn" aria-label="Delete product">&times;</button>
+                </td>
             </tr>
         </tbody>
     </table>
@@ -29,9 +50,11 @@
     <div class="buttons">
         <button id="addProduct">Add product</button>
         <button id="Calculate">Calculate</button>
+        <button id="Reset">Reset list</button>
     </div>
 
-    <div class="result">Total = $<span id="total">0</span></div>
+    <div class="result">Total = $<span id="total" aria-live="polite">0</span></div>
+
     <script src="script.js"></script>
 </body>
 </html>
