@@ -3,14 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkMode.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <title>Shop List</title>
 </head>
 
 <body>
-    <h1>Shop List</h1>
+    <header>
+        <h1>Shop List</h1>
+        <div class="menu-btn" id="toggle-sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="sidebar" class="sidebar">
+            <h2>Lists</h2>
+            <ul class="list-container">
+                <li class="list-item">
+                    <span class="list-name">List A</span>
+                    <button class="load-btn">Load</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+            </ul>
+            <button class="saveBtn">Save</button>
+            <input type="text" id="saveListName" placeholder="list name">
+            <button id="submitName">submit</button>
+        </div>
+    </header>
+
     <button id="toggle-mode" aria-pressed="false">Toggle dark mode</button>
 
     <table aria-label="Shopping list" id="table">
@@ -19,7 +42,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Price</th>
                 <th scope="col">Amount</th>
-                <th scope="col">Actions</th>
+                <th scope="col" id="action">Actions</th>
             </tr>
         </thead>
         <tbody id="table-body">
@@ -55,6 +78,7 @@
 
     <div class="result">Total = $<span id="total" aria-live="polite">0</span></div>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

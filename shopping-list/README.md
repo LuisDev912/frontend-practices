@@ -7,11 +7,15 @@ It demonstrates **table manipulation, form validation, and LocalStorage usage**.
 
 ## Project Structure
 
-shopping-list/
-│
-├── index.html # Main page with the shopping table
-├── styles.css # Styling for the table and page
-└── script.js # Logic for adding rows, calculating totals, and LocalStorage handling
+├── assets
+│ ├── css
+│ │ ├── styles.css # Principal styles
+│ │ └── responsive.css # Styles for media queries/responsive
+│ ├── js
+│ │ └── script.js # Functionalities
+├── index.html # Principal page
+├── LICENSE # Project license
+└── README.md # Project documentation
 
 ---
 

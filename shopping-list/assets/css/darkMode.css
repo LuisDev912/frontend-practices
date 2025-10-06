@@ -1,0 +1,60 @@
+/* funcionality for dark mode */
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode input {
+    background-color: #333;
+    color: #cfcece;
+}
+
+body.dark-mode th {
+    background-color: #bb86fc;
+    color: #e7e6e6;
+}
+
+body.dark-mode button {
+    background-color: #0c998b;
+}
+
+body.dark-mode footer {
+    color: white;
+}
+
+body.dark-mode footer a {
+    text-decoration: none;
+    color: white;
+}
+
+body.dark-mode footer a:hover {
+    text-decoration: underline;
+    color: #e7e6e6;
+}
+
+body.dark-mode .menu-btn span {
+    display: block;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+body.dark-mode .sidebar {
+    background-color: #1d1d1d;
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .delete-btn {
+    background-color: #e74c3c;
+}
+
+body.dark-mode .list-item {
+
+    background-color: #040404;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .saveBtn {
+    background-color: #3d8641;
+}
