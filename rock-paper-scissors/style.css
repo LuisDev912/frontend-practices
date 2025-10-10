@@ -45,3 +45,8 @@ body{
     margin-top: 15px;
 }
 
+#result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffd166;
+}
