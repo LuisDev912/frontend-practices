@@ -16,5 +16,23 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         const userChoice = button.dataset.choice;
         const computerChoice = Object.keys(rules)[Math.floor(Math.random() * 3)];
+
+        userChoiceElement.textContent = userChoice;
+        computerChoiceElement.textContent = '---';
+        result.textContent = " ";
+        comparing.style.display = 'inline';
+
+        setTimeout(() => {
+            comparing.style.display = 'none';
+            computerChoiceElement.textContent = computerChoice;
+
+            if (userChoice === computerChoice) {
+                result.textContent = "It's a draw";
+            } else if (rules[userChoice] === computerChoice) {
+                result.textContent = "You won!";
+            } else {
+                result.textContent = "You lost...";
+            }
+        }, 1000);
     });
 });
