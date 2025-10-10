@@ -7,7 +7,21 @@
     <title>rock, paper, scissors</title>
 </head>
 <body>
-    <h1>game</h1>
+    <main class="game">
+        <h1>rock, paper, scissors</h1>
+
+        <div class="choices">
+            <button class="choice" data-choice="rock">rock</button>
+            <button class="choice" data-choice="paper">paper</button>
+            <button class="choice" data-choice="scissors">scissors</button>
+        </div>
+
+        <div class="status">
+            <p>Your choice: <span id="user-choice">---</span></p>
+            <p>Computer's choice: <span id="computer-choice">---</span></p>
+            <span id="comparing-choice">Comparing choices....</span>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
