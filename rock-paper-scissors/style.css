@@ -9,13 +9,15 @@ body{
 }
 
 h1{
-    font-size: clamp(2rem, 5vw + 1rem, 6rem);
+    font-size: clamp(2rem, 5vw + 1rem, 6rem); /* responsive */
     margin: 5px;
 }
 
 .game{
     text-align: center;
 }
+
+/* styles for the buttons */
 
 .choices{
     display: flex;
@@ -39,10 +41,12 @@ h1{
     box-shadow: 3px 2px 3px 0 #555;
 }
 
-.choice.disabled{
+.choice.disabled{ /* actives this when the button is pressed */
     opacity: 0.5;
     pointer-events: none;
 }
+
+/* styles for the choices and the results */
 
 .status{
     opacity: 0.9;
