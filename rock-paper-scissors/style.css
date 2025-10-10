@@ -31,3 +31,17 @@ body{
     transform: scale(1.1);
     box-shadow: 3px 2px 3px 0 #555;
 }
+
+.status{
+    opacity: 0.9;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#comparing-choice{
+    display: none;
+    font-style: italic;
+    color: #ccc;
+    margin-top: 15px;
+}
+
