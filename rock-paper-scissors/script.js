@@ -16,6 +16,7 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         const userChoice = button.dataset.choice;
         const computerChoice = Object.keys(rules)[Math.floor(Math.random() * 3)];
+        button.classList.toggle('disabled');
 
         userChoiceElement.textContent = userChoice;
         computerChoiceElement.textContent = '---';
@@ -33,6 +34,8 @@ buttons.forEach(button => {
             } else {
                 result.textContent = "You lost...";
             }
+
+            button.classList.toggle('disabled');
         }, 1000);
     });
 });
