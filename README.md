@@ -23,6 +23,7 @@ Each project is stored in its own folder
 - `TO-DO` -> Folder of the second project.
 - `shopping-list` -> Folder of the third project.
 - `card-generator` -> Folder of the fourth project.
+- `rock-paper-scissors` -> Folder of the fifth project.
 
 ---
 
