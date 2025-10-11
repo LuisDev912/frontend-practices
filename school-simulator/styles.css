@@ -2,9 +2,10 @@ body{
     margin: 0;
     background-color: #F5f5f5;
     font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
 }
 
-header{
+header, footer{
     background-color: #4A90E2;
     display: flex;
     flex-direction: column;
@@ -24,7 +25,45 @@ p{
     color: #333333;
 }
 
+th{
+    background-color: #5B9BD5;
+}
+
+td{
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E8F0FE;
+}
+
+tbody tr:nth-child(odd) { 
+    background-color: #FFFFFF;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+.Warnings {
+    background-color: #E74C3C;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
 main{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.student-table-section, .add-student-section{
+    text-align: center;
+    padding: 1rem;
 }
