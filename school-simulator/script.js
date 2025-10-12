@@ -6,7 +6,11 @@ const table = document.querySelector('.tbody');
 addBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
-    if (nameInp.value !== "" && !isNaN(gradeInp.value)){
+    if (!nameInp.form.reportValidity()) {
+        return;
+    }
+
+    if (nameInp.value !== "" && !isNaN(gradeInp.value) && parseInt(gradeInp.value) < 10){
         const newStudent = {
             name: nameInp.value,
             grade: Number(gradeInp.value),
