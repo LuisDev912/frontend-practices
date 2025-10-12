@@ -29,6 +29,7 @@ h1 {
 h1, h2{
     color: #003366;
     font-style: italic;
+    text-align: center;
 }
 
 p{
@@ -80,6 +81,21 @@ table, th, td {
     gap: 0.5rem;
 }
 
+input{
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 #submit{
-    grid-column: 1 / 3;
+    margin: 15px 0 15px 0;
+    grid-column: span 2;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+}
+
+#submit:hover{
+    background-color: #388E3C;
 }
