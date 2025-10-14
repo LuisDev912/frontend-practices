@@ -20,19 +20,17 @@ function studentApp(){
 
         if (!nameInp.form.reportValidity()) return;
 
-        if (nameInp.value !== "" && !isNaN(gradeInp.value) && parseInt(gradeInp.value) < 10){
-            const newStudent = {
-                name: nameInp.value,
-                grade: Number(gradeInp.value),
-                attendance: "Pending",
-                warnings: 0
-            };
+        const newStudent = {
+            name: nameInp.value,
+            grade: Number(gradeInp.value),
+            attendance: "Pending",
+            warnings: 0
+        };
 
-            const newRow = newTable(newStudent);
-            table.appendChild(newRow);
+        const newRow = newTable(newStudent);
+        table.appendChild(newRow);
 
-            nameInp.value = ""; // clears inputs
-            gradeInp.value = "";
-        }
+        nameInp.value = ""; // clears inputs
+        gradeInp.value = "";
     });
 }

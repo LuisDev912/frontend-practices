@@ -36,6 +36,10 @@ p{
     color: #333333;
 }
 
+img{
+    border-radius: 50%;
+}
+
 /* table */
 
 th{
@@ -94,6 +98,7 @@ input{
     padding: 5px;
     font-size: 1.2rem;
     background-color: #4CAF50;
+    border-radius: 25px;
 }
 
 #submit:hover{
