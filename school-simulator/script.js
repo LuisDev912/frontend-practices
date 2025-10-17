@@ -34,3 +34,11 @@ function studentApp(){
         gradeInp.value = "";
     });
 }
+
+// I'll try to convert this fetch into a function later
+fetch('student.json')
+    .then((response) => {
+        return response.json();
+    }).then((students) => {
+        console.log(students);
+    });
