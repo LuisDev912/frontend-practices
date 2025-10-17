@@ -1,0 +1,360 @@
+{
+    "1-A": [
+        {
+            "name": "Liam Carter",
+            "attendance": 95,
+            "average": 8.7,
+            "warnings": 0
+        },
+        {
+            "name": "Olivia Brown",
+            "attendance": 98,
+            "average": 9.2,
+            "warnings": 0
+        },
+        {
+            "name": "Noah Wilson",
+            "attendance": 90,
+            "average": 8.0,
+            "warnings": 1
+        },
+        {
+            "name": "Emma Davis",
+            "attendance": 93,
+            "average": 8.9,
+            "warnings": 0
+        },
+        {
+            "name": "Sophia Miller",
+            "attendance": 85,
+            "average": 7.8,
+            "warnings": 2
+        },
+        {
+            "name": "James Taylor",
+            "attendance": 88,
+            "average": 7.4,
+            "warnings": 1
+        },
+        {
+            "name": "Isabella Moore",
+            "attendance": 96,
+            "average": 9.0,
+            "warnings": 0
+        },
+        {
+            "name": "Ethan Anderson",
+            "attendance": 89,
+            "average": 8.1,
+            "warnings": 1
+        }
+    ],
+    "2-B": [
+        {
+            "name": "Lucas Johnson",
+            "attendance": 97,
+            "average": 9.3,
+            "warnings": 0
+        },
+        {
+            "name": "Mia Clark",
+            "attendance": 94,
+            "average": 8.6,
+            "warnings": 0
+        },
+        {
+            "name": "Elijah Lewis",
+            "attendance": 88,
+            "average": 7.9,
+            "warnings": 1
+        },
+        {
+            "name": "Amelia Walker",
+            "attendance": 91,
+            "average": 8.4,
+            "warnings": 0
+        },
+        {
+            "name": "Benjamin Hall",
+            "attendance": 83,
+            "average": 7.2,
+            "warnings": 2
+        },
+        {
+            "name": "Charlotte Allen",
+            "attendance": 92,
+            "average": 8.8,
+            "warnings": 0
+        },
+        {
+            "name": "Henry Young",
+            "attendance": 90,
+            "average": 8.0,
+            "warnings": 1
+        },
+        {
+            "name": "Evelyn King",
+            "attendance": 99,
+            "average": 9.6,
+            "warnings": 0
+        },
+        {
+            "name": "Alexander Scott",
+            "attendance": 87,
+            "average": 7.5,
+            "warnings": 2
+        },
+        {
+            "name": "Harper Adams",
+            "attendance": 93,
+            "average": 8.5,
+            "warnings": 0
+        }
+    ],
+    "2-C": [
+        {
+            "name": "John",
+            "attendancePercent": 90,
+            "grade": 9,
+            "warnings": 1
+        },
+        {
+            "name": "Mary",
+            "attendancePercent": 100,
+            "grade": 9.7,
+            "warnings": 0
+        },
+        {
+            "name": "Lee",
+            "attendancePercent": 75,
+            "grade": 7.1,
+            "warnings": 3
+        },
+        {
+            "name": "Lydia",
+            "attendancePercent": 100,
+            "grade": 10,
+            "warnings": 0
+        },
+        {
+            "name": "Dale",
+            "attendancePercent": 50,
+            "grade": 3.2,
+            "warnings": 6
+        },
+        {
+            "name": "Antonio",
+            "attendancePercent": 90,
+            "grade": 8.2,
+            "warnings": 1
+        },
+        {
+            "name": "Ramos",
+            "attendancePercent": 100,
+            "grade": 9.2,
+            "warnings": 0
+        },
+        {
+            "name": "Edith",
+            "attendancePercent": 75,
+            "grade": 8,
+            "warnings": 2
+        },
+        {
+            "name": "Joel",
+            "attendancePercent": 100,
+            "grade": 6.4,
+            "warnings": 3
+        },
+        {
+            "name": "Jenkins",
+            "attendancePercent": 85,
+            "grade": 7.9,
+            "warnings": 1
+        },
+        {
+            "name": "Henrietta",
+            "attendancePercent": 90,
+            "grade": 9.9,
+            "warnings": 0
+        },
+        {
+            "name": "Norman",
+            "attendancePercent": 80,
+            "grade": 5.9,
+            "warnings": 2
+        },
+        {
+            "name": "Ralph",
+            "attendancePercent": 100,
+            "grade": 9.7,
+            "warnings": 0
+        },
+        {
+            "name": "Jeanette",
+            "attendancePercent": 100,
+            "grade": 9.7,
+            "warnings": 1
+        },
+        {
+            "name": "Trevor",
+            "attendancePercent": 90,
+            "grade": 7,
+            "warnings": 2
+        },
+        {
+            "name": "Gertrude",
+            "attendancePercent": 100,
+            "grade": 9,
+            "warnings": 0
+        },
+        {
+            "name": "Tyler",
+            "attendancePercent": 85,
+            "grade": 8.5,
+            "warnings": 1
+        },
+        {
+            "name": "Willie",
+            "attendancePercent": 50,
+            "grade": 6,
+            "warnings": 3
+        },
+        {
+            "name": "Christopher",
+            "attendancePercent": 100,
+            "grade": 9.7,
+            "warnings": 0
+        }
+    ],
+    "3-A": [
+        {
+            "name": "William Rivera",
+            "attendance": 93,
+            "average": 8.5,
+            "warnings": 0
+        },
+        {
+            "name": "Avery Ramirez",
+            "attendance": 87,
+            "average": 7.4,
+            "warnings": 2
+        },
+        {
+            "name": "Samuel Brooks",
+            "attendance": 91,
+            "average": 8.2,
+            "warnings": 1
+        },
+        {
+            "name": "Abigail Campbell",
+            "attendance": 96,
+            "average": 9.3,
+            "warnings": 0
+        },
+        {
+            "name": "David Sanders",
+            "attendance": 84,
+            "average": 7.0,
+            "warnings": 2
+        },
+        {
+            "name": "Ella Flores",
+            "attendance": 89,
+            "average": 8.0,
+            "warnings": 1
+        },
+        {
+            "name": "Sebastian Price",
+            "attendance": 92,
+            "average": 8.7,
+            "warnings": 0
+        },
+        {
+            "name": "Luna Cox",
+            "attendance": 98,
+            "average": 9.5,
+            "warnings": 0
+        },
+        {
+            "name": "Joseph Reed",
+            "attendance": 86,
+            "average": 7.5,
+            "warnings": 1
+        }
+    ],
+    "3-B": [
+        {
+            "name": "Levi Barnes",
+            "attendance": 90,
+            "average": 8.1,
+            "warnings": 1
+        },
+        {
+            "name": "Zoe Jenkins",
+            "attendance": 97,
+            "average": 9.4,
+            "warnings": 0
+        },
+        {
+            "name": "Logan Gray",
+            "attendance": 85,
+            "average": 7.2,
+            "warnings": 2
+        },
+        {
+            "name": "Hazel Ross",
+            "attendance": 93,
+            "average": 8.6,
+            "warnings": 0
+        },
+        {
+            "name": "Caleb Patterson",
+            "attendance": 89,
+            "average": 8.0,
+            "warnings": 1
+        },
+        {
+            "name": "Aria Myers",
+            "attendance": 98,
+            "average": 9.7,
+            "warnings": 0
+        },
+        {
+            "name": "Nathan Rogers",
+            "attendance": 87,
+            "average": 7.8,
+            "warnings": 1
+        },
+        {
+            "name": "Penelope Russell",
+            "attendance": 95,
+            "average": 9.1,
+            "warnings": 0
+        },
+        {
+            "name": "Hunter Peterson",
+            "attendance": 84,
+            "average": 7.0,
+            "warnings": 2
+        },
+        {
+            "name": "Lily Simmons",
+            "attendance": 91,
+            "average": 8.4,
+            "warnings": 0
+        },
+        {
+            "name": "Isaac Ward",
+            "attendance": 88,
+            "average": 7.9,
+            "warnings": 1
+        },
+        {
+            "name": "Camila Butler",
+            "attendance": 96,
+            "average": 9.3,
+            "warnings": 0
+        }
+    ]
+}

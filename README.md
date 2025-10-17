@@ -24,7 +24,7 @@ Each project is stored in its own folder
 - `shopping-list` -> Folder of the third project.
 - `card-generator` -> Folder of the fourth project.
 - `rock-paper-scissors` -> Folder of the fifth project.
-
+- `school-simulator` -> Folder of the sixth project.
 ---
 
 ## Tecnologies used in the repository
