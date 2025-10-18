@@ -9,7 +9,7 @@ function newTable(student) {
     row.innerHTML = `
         <td>${student.name}</td>
         <td>${student.attendance}</td>
-        <td>${student.grade}</td>
+        <td>${student.average}</td>
         <td class="Warnings">${student.warnings}</td>
     `;
     return row;
@@ -23,7 +23,7 @@ function studentApp(){
 
         const newStudent = {
             name: nameInp.value,
-            grade: Number(gradeInp.value),
+            average: Number(gradeInp.value),
             attendance: "Pending",
             warnings: 0
         };

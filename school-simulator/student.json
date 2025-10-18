@@ -115,115 +115,115 @@
         {
             "name": "John",
             "attendance": 90,
-            "grade": 9,
+            "average": 9,
             "warnings": 1
         },
         {
             "name": "Mary",
             "attendance": 100,
-            "grade": 9.7,
+            "average": 9.7,
             "warnings": 0
         },
         {
             "name": "Lee",
             "attendance": 75,
-            "grade": 7.1,
+            "average": 7.1,
             "warnings": 3
         },
         {
             "name": "Lydia",
             "attendance": 100,
-            "grade": 10,
+            "average": 10,
             "warnings": 0
         },
         {
             "name": "Dale",
             "attendance": 50,
-            "grade": 3.2,
+            "average": 3.2,
             "warnings": 6
         },
         {
             "name": "Antonio",
             "attendance": 90,
-            "grade": 8.2,
+            "average": 8.2,
             "warnings": 1
         },
         {
             "name": "Ramos",
             "attendance": 100,
-            "grade": 9.2,
+            "average": 9.2,
             "warnings": 0
         },
         {
             "name": "Edith",
             "attendance": 75,
-            "grade": 8,
+            "average": 8,
             "warnings": 2
         },
         {
             "name": "Joel",
             "attendance": 100,
-            "grade": 6.4,
+            "average": 6.4,
             "warnings": 3
         },
         {
             "name": "Jenkins",
             "attendance": 85,
-            "grade": 7.9,
+            "average": 7.9,
             "warnings": 1
         },
         {
             "name": "Henrietta",
             "attendance": 90,
-            "grade": 9.9,
+            "average": 9.9,
             "warnings": 0
         },
         {
             "name": "Norman",
             "attendance": 80,
-            "grade": 5.9,
+            "average": 5.9,
             "warnings": 2
         },
         {
             "name": "Ralph",
             "attendance": 100,
-            "grade": 9.7,
+            "average": 9.7,
             "warnings": 0
         },
         {
             "name": "Jeanette",
             "attendance": 100,
-            "grade": 9.7,
+            "average": 9.7,
             "warnings": 1
         },
         {
             "name": "Trevor",
             "attendance": 90,
-            "grade": 7,
+            "average": 7,
             "warnings": 2
         },
         {
             "name": "Gertrude",
             "attendance": 100,
-            "grade": 9,
+            "average": 9,
             "warnings": 0
         },
         {
             "name": "Tyler",
             "attendance": 85,
-            "grade": 8.5,
+            "average": 8.5,
             "warnings": 1
         },
         {
             "name": "Willie",
             "attendance": 50,
-            "grade": 6,
+            "average": 6,
             "warnings": 3
         },
         {
             "name": "Christopher",
             "attendance": 100,
-            "grade": 9.7,
+            "average": 9.7,
             "warnings": 0
         }
     ],
