@@ -38,7 +38,7 @@ function studentApp(){
 
 // I'll try to convert this fetch into a function later
 
-let data = null;
+let data = {};
 fetch('student.json')
     .then((response) => {
         return response.json();
@@ -47,8 +47,17 @@ fetch('student.json')
     });
 
 
+
 select.addEventListener('change', () => {
     const className = select.value;
     const selectedClass = data[className];
-    console.log(selectedClass);
+
+    table.innerHTML = '';
+
+    selectedClass.forEach(student => {
+        const row = newTable(student);
+        table.appendChild(row);
+    });
 });
+
+studentApp();
