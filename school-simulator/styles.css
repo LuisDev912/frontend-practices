@@ -36,8 +36,10 @@ p{
     color: #333333;
 }
 
-img{
+img {
+    width: 100px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 /* table */
@@ -62,7 +64,7 @@ tr:nth-child(odd) {
 table, th, td {
     border: 1px solid #ccc;
     border-collapse: collapse;
-    padding: 0.5rem;
+    padding: 0.5rem 2px 0.5rem;
 }
 
 .Warnings {
@@ -81,7 +83,7 @@ table, th, td {
 
 #add-student-form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 0.5rem;
 }
 
@@ -93,8 +95,7 @@ input{
 }
 
 #submit{
-    margin: 15px 0 15px 0;
-    grid-column: span 2;
+    margin-bottom: 5px;
     padding: 5px;
     font-size: 1.2rem;
     background-color: #4CAF50;
@@ -105,8 +106,15 @@ input{
     background-color: #388E3C;
 }
 
+.class-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 select {
-    margin: 15px 40% 0;
+    margin-top: 15px;
     padding: 0.625rem 1.25rem;
     background-color: #273b57;
     border: 0;
@@ -129,4 +137,36 @@ select:focus {
 select:hover {
     background-color: #0d5ba8;
     color: white;
+}
+
+@media screen and (min-width: 750px) {
+    #add-student-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(105px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    input {
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    
+    #submit {
+        margin-bottom: 5px;
+        grid-column: span 2;
+        padding: 5px;
+        font-size: 1.2rem;
+        background-color: #4CAF50;
+        border-radius: 25px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 1rem;
+    }
 }
