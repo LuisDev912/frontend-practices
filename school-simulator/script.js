@@ -44,20 +44,20 @@ fetch('student.json')
         return response.json();
     }).then((students) => {
         data = students;
+    
+
+    select.addEventListener('change', () => {
+        const className = select.value;
+        const selectedClass = data[className];
+
+        table.innerHTML = '';
+
+        selectedClass.forEach(student => {
+            const row = newTable(student);
+            table.appendChild(row);
+        });
     });
-
-
-
-select.addEventListener('change', () => {
-    const className = select.value;
-    const selectedClass = data[className];
-
-    table.innerHTML = '';
-
-    selectedClass.forEach(student => {
-        const row = newTable(student);
-        table.appendChild(row);
-    });
-});
+    })
+    .catch(error => console.error("Error loading student.json:", error));
 
 studentApp();
