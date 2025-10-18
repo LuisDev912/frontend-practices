@@ -1,10 +1,14 @@
-const nameInp = document.getElementById('name-insert');
-const gradeInp = document.getElementById('grade-insert');
-const addBtn = document.getElementById('submit');
-const table = document.querySelector('.tbody');
-const select = document.querySelector('.classes-selector');
+// inputs and buttons
+const nameInput = document.getElementById('name-insert');
+const gradeInput = document.getElementById('grade-insert');
+const submitBtn = document.getElementById('submit');
 
-function newTable(student) {
+// table and class selectors
+const studentsTableBody = document.querySelector('.tbody');
+const classSelector = document.querySelector('.classes-selector');
+
+// function to create a new row of students
+function createStudentRow(student) {
     const row = document.createElement('tr');
     row.innerHTML = `
         <td>${student.name}</td>
@@ -15,49 +19,52 @@ function newTable(student) {
     return row;
 }
 
-function studentApp(){
-    addBtn.addEventListener('click', (event) => {
+// function to add a new students from the form
+function initializeStudentForm(){
+    submitBtn.addEventListener('click', (event) => {
         event.preventDefault();
 
-        if (!nameInp.form.reportValidity()) return;
+        // form validation
+        if (!nameInput.form.reportValidity()) return;
 
         const newStudent = {
-            name: nameInp.value,
-            average: Number(gradeInp.value),
+            name: nameInput.value,
+            average: Number(gradeInput.value),
             attendance: "Pending",
             warnings: 0
         };
 
-        const newRow = newTable(newStudent);
-        table.appendChild(newRow);
+        // create new row and add to the table
+        const newRow = createStudentRow(newStudent);
+        studentsTableBody.appendChild(newRow);
 
-        nameInp.value = ""; // clears inputs
-        gradeInp.value = "";
+        nameInput.value = ""; // clears inputs
+        gradeInput.value = "";
     });
 }
 
-// I'll try to convert this fetch into a function later
+// load students data from the JSON
+let studentData = {};
 
-let data = {};
 fetch('student.json')
-    .then((response) => {
-        return response.json();
+    .then((response) => { return response.json();
     }).then((students) => {
-        data = students;
+        studentData = students;
     
+        // show students of the selected class
+    classSelector.addEventListener('change', () => {
+        const selectedClassName = classSelector.value;
+        const selectedClassStudents = studentData[selectedClassName];
 
-    select.addEventListener('change', () => {
-        const className = select.value;
-        const selectedClass = data[className];
+        studentsTableBody.innerHTML = '';
 
-        table.innerHTML = '';
-
-        selectedClass.forEach(student => {
-            const row = newTable(student);
-            table.appendChild(row);
+        selectedClassStudents.forEach(student => {
+            const row = createStudentRow(student);
+            studentsTableBody.appendChild(row);
         });
     });
     })
     .catch(error => console.error("Error loading student.json:", error));
 
-studentApp();
+// initialize form
+initializeStudentForm();
