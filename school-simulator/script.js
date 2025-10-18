@@ -2,6 +2,7 @@ const nameInp = document.getElementById('name-insert');
 const gradeInp = document.getElementById('grade-insert');
 const addBtn = document.getElementById('submit');
 const table = document.querySelector('.tbody');
+const select = document.querySelector('.classes-selector');
 
 function newTable(student) {
     const row = document.createElement('tr');
@@ -36,9 +37,18 @@ function studentApp(){
 }
 
 // I'll try to convert this fetch into a function later
+
+let data = null;
 fetch('student.json')
     .then((response) => {
         return response.json();
     }).then((students) => {
-        console.log(students);
+        data = students;
     });
+
+
+select.addEventListener('change', () => {
+    const className = select.value;
+    const selectedClass = data[className];
+    console.log(selectedClass);
+});

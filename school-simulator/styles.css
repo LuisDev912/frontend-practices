@@ -106,6 +106,7 @@ input{
 }
 
 select {
+    margin: 15px 40% 0;
     padding: 0.625rem 1.25rem;
     background-color: #273b57;
     border: 0;
@@ -119,13 +120,12 @@ select {
     background-repeat: no-repeat;
     background-position: right 0.5rem center;
     padding-right: 2.5rem;
-
-    
 }
 select:focus {
     outline: 2px solid #1173d4;
     outline-offset: 2px;
 }
+
 select:hover {
     background-color: #0d5ba8;
     color: white;
