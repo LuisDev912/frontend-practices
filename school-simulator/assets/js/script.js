@@ -46,7 +46,7 @@ function initializeStudentForm(){
 // load students data from the JSON
 let studentData = {};
 
-fetch('student.json')
+fetch('./assets/json/student.json')
     .then((response) => { return response.json();
     }).then((students) => {
         studentData = students;

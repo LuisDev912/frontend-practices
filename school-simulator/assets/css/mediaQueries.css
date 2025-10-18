@@ -1,0 +1,60 @@
+@media screen and (min-width: 750px) {
+    #add-student-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    input {
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    #submit {
+        margin-bottom: 5px;
+        grid-column: span 2;
+        padding: 5px;
+        font-size: 1.2rem;
+        background-color: #4CAF50;
+        border-radius: 25px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 1rem;
+    }
+
+    header {
+        display: grid;
+        max-height: 200px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "img h1 h1"
+            "p p p";
+        justify-items: center;
+
+    }
+
+    img {
+        grid-area: img;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    header h1 {
+        justify-self: center;
+        font-size: clamp(3rem, 2.5vw + 1rem, 4rem);
+        padding: 0;
+    }
+
+    header p {
+        grid-area: p;
+    }
+}
