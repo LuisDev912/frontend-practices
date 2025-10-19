@@ -31,12 +31,13 @@
 
     header {
         display: grid;
-        max-height: 200px;
+        max-height: 400px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
             "img h1 h1"
-            "p p p";
+            "p p p"
+            "h4 h4 h4";
         justify-items: center;
 
     }
@@ -56,5 +57,9 @@
 
     header p {
         grid-area: p;
+    }
+    
+    h4{
+        grid-area: h4;
     }
 }

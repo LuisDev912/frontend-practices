@@ -10,10 +10,12 @@
 <body>
     <header>
         <img src="./assets/img/favicom.png" alt="school logo"> 
-        <h1>Example school</h1>
+        <h1>St. Victoria High School</h1>
         <p>Class 2 C - Student panel</p>
+        <h4>Welcome to the Secondary School N°72. Click <a href="#redirect-section">here</a> to<br> find information about us</h4>
     </header>
     
+
     <h1>Select the class</h1>
     <section class="class-section">
         <select name="classes" class="classes-selector">
@@ -54,31 +56,61 @@
                 </form>
             </section>
         </div>
-        <section class="school-section">
-            <p>
-                Welcome to the Secondary School N°72. Here you'll <br> find information about us
-                <ul class="school-information">
-                    <li>direction: <address style="display: inline;">631 Cuej Lane</address></li>
-                    <li>country: <address>Canada</address></li>
-                    <li>city: <address>Victoria</address></li>
-                </ul>
-                <!-- note: the name and direction were choosen randomly -->
+        <section class="school-section" id="redirect-section">
+            <h2>Welcome to St. Victoria High School</h2>
+            <p class="intro-text">
+                We are committed to forming responsible, curious, and creative students through a modern educational approach
+                rooted in human values.
             </p>
-            <ul>
-                <li>example</li>
-                <li>example</li>
-                <li>example</li>
-                <li>example</li>
-                <li>example</li>
-                <li>example</li>
+        
+            <ul class="school-information">
+                <li><strong>Direction:</strong>
+                    <address style="display: inline;">631 Cuej Lane</address>
+                </li>
+                <li><strong>Country:</strong>
+                    <address style="display: inline;">Canada</address>
+                </li>
+                <li><strong>City:</strong>
+                    <address style="display: inline;">Victoria</address>
+                </li>
+                <li><strong>Founded:</strong> <time datetime="1987">1987</time></li>
             </ul>
+        
+            <article class="mission-vision">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide quality education that nurtures personal growth, academic excellence, and civic responsibility.
+                </p>
+        
+                <h3>Our Vision</h3>
+                <p>
+                    To be a leading educational institution where innovation meets tradition and where every student discovers
+                    their full potential.
+                </p>
+            </article>
+        
+            <div class="school-gallery">
+                <figure>
+                    <img src="assets/img/schoolPicture.jpeg" alt="School building" >
+                    <figcaption>Main building of the school</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/studentsPicture.webp" alt="Students in the library" style="max-width: 357px;">
+                    <figcaption>Students collaborating in the library</figcaption>
+                </figure>
+            </div>
         </section>
+
     </main>
 
     
 
     <footer>
         <p>This is a school simulation - LuisDev912</p>
+        <p>
+            Phone: <a href="tel:+1555123456">+1 (555) 123-456</a> <br>
+            Email: <a href="mailto:info@stvictoria.edu">info@stvictoria.edu</a>
+        </p>
     </footer>
     <script src="./assets/js/script.js"></script>
 </body>
