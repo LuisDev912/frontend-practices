@@ -6,6 +6,7 @@ const submitBtn = document.getElementById('submit');
 // table and class selectors
 const studentsTableBody = document.querySelector('.tbody');
 const classSelector = document.querySelector('.classes-selector');
+const mainContent = document.getElementById('main-section');
 
 // function to create a new row of students
 function createStudentRow(student) {
@@ -52,17 +53,18 @@ fetch('./assets/json/student.json')
         studentData = students;
     
         // show students of the selected class
-    classSelector.addEventListener('change', () => {
-        const selectedClassName = classSelector.value;
-        const selectedClassStudents = studentData[selectedClassName];
+        classSelector.addEventListener('change', () => {
+            mainContent.style.display = 'block';
+            const selectedClassName = classSelector.value;
+            const selectedClassStudents = studentData[selectedClassName];
 
-        studentsTableBody.innerHTML = '';
+            studentsTableBody.innerHTML = '';
 
-        selectedClassStudents.forEach(student => {
-            const row = createStudentRow(student);
-            studentsTableBody.appendChild(row);
+            selectedClassStudents.forEach(student => {
+                const row = createStudentRow(student);
+                studentsTableBody.appendChild(row);
+            });
         });
-    });
     })
     .catch(error => console.error("Error loading student.json:", error));
 

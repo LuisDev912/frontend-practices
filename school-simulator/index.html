@@ -27,32 +27,55 @@
     </section>
 
     <main>
-        <section class="student-table-section">
-            <h2>Students</h2>
-            <table class="student-table">
-                <thead>
-                    <tr>
-                        <th>name</th>
-                        <th>attendance</th>
-                        <th>Average grades</th>
-                        <th>Warnings</th>
-                    </tr>
-                </thead>
-                <tbody class="tbody">
-                    <!-- here the students will be shown dynamically -->
-                </tbody>
-            </table>
-        </section>
+        <div id="main-section" style="display: none;">
+            <section class="student-table-section" >
+                <h2>Students</h2>
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>attendance</th>
+                            <th>Average grades</th>
+                            <th>Warnings</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <!-- here the students will be shown dynamically -->
+                    </tbody>
+                </table>
+            </section>
 
-        <section class="add-student-section">
-            <h2>Add student</h2>
-            <form id="add-student-form">
-                <input type="text" placeholder="Enter full name" required id="name-insert">
-                <input type="number" placeholder="Enter initial grade" required min="0" max="10" id="grade-insert">
-                <button type="submit" id="submit">Add</button>
-            </form>
+            <section class="add-student-section">
+                <h2>Add student</h2>
+                <form id="add-student-form">
+                    <input type="text" placeholder="Enter full name" required id="name-insert">
+                    <input type="number" placeholder="Enter initial grade" required min="0" max="10" id="grade-insert">
+                    <button type="submit" id="submit">Add</button>
+                </form>
+            </section>
+        </div>
+        <section class="school-section">
+            <p>
+                Welcome to the Secondary School N°72. Here you'll <br> find information about us
+                <ul class="school-information">
+                    <li>direction: <address style="display: inline;">631 Cuej Lane</address></li>
+                    <li>country: <address>Canada</address></li>
+                    <li>city: <address>Victoria</address></li>
+                </ul>
+                <!-- note: the name and direction were choosen randomly -->
+            </p>
+            <ul>
+                <li>example</li>
+                <li>example</li>
+                <li>example</li>
+                <li>example</li>
+                <li>example</li>
+                <li>example</li>
+            </ul>
         </section>
     </main>
+
+    
 
     <footer>
         <p>This is a school simulation - LuisDev912</p>

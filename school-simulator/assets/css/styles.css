@@ -20,6 +20,22 @@ main {
     align-items: center;
 }
 
+address{ 
+    display: inline;
+}
+
+/* list */
+
+.school-information li::marker{
+    color:#1173d4;
+    content: ">> ";
+    font-size: 1.2em;
+}
+
+ul li{
+    list-style-type: none;
+}
+
 /* text */
 
 h1 {
