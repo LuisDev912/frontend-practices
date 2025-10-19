@@ -16,46 +16,8 @@
     </header>
     
 
-    <h1>Select the class</h1>
-    <section class="class-section">
-        <select name="classes" class="classes-selector">
-            <option value="" disabled selected>select</option>
-            <option value="1-A">Class 1 A</option>
-            <option value="2-B">Class 2 B</option>
-            <option value="2-C">Class 2 C</option>
-            <option value="3-A">Class 3 A</option>
-            <option value="3-B">Class 3 B</option>
-        </select>
-    </section>
-
+    
     <main>
-        <div id="main-section" style="display: none;">
-            <section class="student-table-section" >
-                <h2>Students</h2>
-                <table class="student-table">
-                    <thead>
-                        <tr>
-                            <th>name</th>
-                            <th>attendance</th>
-                            <th>Average grades</th>
-                            <th>Warnings</th>
-                        </tr>
-                    </thead>
-                    <tbody class="tbody">
-                        <!-- here the students will be shown dynamically -->
-                    </tbody>
-                </table>
-            </section>
-
-            <section class="add-student-section">
-                <h2>Add student</h2>
-                <form id="add-student-form">
-                    <input type="text" placeholder="Enter full name" required id="name-insert">
-                    <input type="number" placeholder="Enter initial grade" required min="0" max="10" id="grade-insert">
-                    <button type="submit" id="submit">Add</button>
-                </form>
-            </section>
-        </div>
         <section class="school-section" id="redirect-section">
             <h2>Welcome to St. Victoria High School</h2>
             <p class="intro-text">
@@ -100,6 +62,44 @@
                 </figure>
             </div>
         </section>
+        <h1>Select the class</h1>
+        <section class="class-section">
+            <select name="classes" class="classes-selector">
+                <option value="" disabled selected>select</option>
+                <option value="1-A">Class 1 A</option>
+                <option value="2-B">Class 2 B</option>
+                <option value="2-C">Class 2 C</option>
+                <option value="3-A">Class 3 A</option>
+                <option value="3-B">Class 3 B</option>
+            </select>
+        </section>
+        <div id="main-section" style="display: none;">
+            <section class="student-table-section" >
+                <h2>Students</h2>
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>attendance</th>
+                            <th>Average grades</th>
+                            <th>Warnings</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <!-- here the students will be shown dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="add-student-section">
+                <h2>Add student</h2>
+                <form id="add-student-form">
+                    <input type="text" placeholder="Enter full name" required id="name-insert">
+                    <input type="number" placeholder="Enter initial grade" required min="0" max="10" id="grade-insert">
+                    <button type="submit" id="submit">Add</button>
+                </form>
+            </section>
+        </div>
 
     </main>
 

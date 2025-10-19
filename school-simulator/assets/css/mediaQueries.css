@@ -62,4 +62,23 @@
     h4{
         grid-area: h4;
     }
+
+    .school-section {
+        padding: 2rem 4rem;
+        gap: 2rem;
+    }
+    
+    .school-section h2 {
+        font-size: 2rem;
+    }
+    
+    .mission-vision {
+        max-width: 600px;
+    }
+    
+    .school-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        max-width: 800px;
+    }
 }

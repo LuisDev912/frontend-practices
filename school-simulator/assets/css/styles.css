@@ -87,9 +87,14 @@ ul li{
 }
 
 .school-gallery img {
+    transition: 0.5s ease;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.school-gallery img:hover{
+    transform: scale(1.1);
 }
 
 .school-contact {
@@ -199,6 +204,7 @@ input{
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 select {
