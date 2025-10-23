@@ -4,10 +4,26 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Converter USD and ARS</title>
 </head>
 <body>
-    <h1>currency converter</h1>
-    <h2>This project is about convert American Dollars to Argentine Pesos</h2>
+    <main class="converter">
+        <h1>Exchange converter</h1>
+        <form id="converter-form">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <label for="direction">Convert:</label>
+            <select id="direction">
+                <option value="usdToArs">USD to ARS</option>
+                <option value="arsToUsd">ARS to USD</option>
+            </select>
+
+            <button type="submit">Show result</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
