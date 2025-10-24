@@ -12,10 +12,19 @@ fetch('https://dolarapi.com/v1/dolares/oficial')
     .then((data) => {
         usdToArs = data.compra;
         arsToUsd = 1 / usdToArs;
-        console.log(`1 USD = ${arsToUsd} ARS`)
     })
     .catch((err) => {
         alert(err);
         usdToArs = 1000; // approximate
         arsToUsd = 1 / usdToArs;
-    });
+});
+
+// element selectors
+const form = document.getElementById('converter-form');
+const amountInput = document.getElementById('amount');
+const directionSelect = document.getElementById('direction');
+const resultDiv = document.getElementById('result');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+});
