@@ -16,7 +16,7 @@
     /* button */
     --button-background: #2398ff;
     --button-hover: #145a97;
-    --buttom-active: #0d5ba8;
+    --buttom-active: #003569;
 
     /* borders and shadows */
     --radius: 10px;
@@ -87,4 +87,14 @@ button {
     color: white;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    background: var(--button-hover);
+}
+
+button:active{
+    background: var(--buttom-active);
+    box-shadow: var(--shadow);
 }
