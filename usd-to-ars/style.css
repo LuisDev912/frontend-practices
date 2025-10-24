@@ -98,3 +98,9 @@ button:active{
     background: var(--buttom-active);
     box-shadow: var(--shadow);
 }
+
+#result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--accent);
+}
