@@ -25,6 +25,21 @@ const amountInput = document.getElementById('amount');
 const directionSelect = document.getElementById('direction');
 const resultDiv = document.getElementById('result');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', e  => {
     e.preventDefault();
+
+    const amountValue = parseInt(amountInput.value);
+    const direction = directionSelect.value;
+    let result = 0;
+
+    // cross multiplication
+    // 1 USD = X ARS → N USD = N * X ARS
+    // 1 ARS = 1/X USD → N ARS = N * (1/X) USD
+    if (direction == 'usdToArs') {
+        result = amountValue * usdToArs;
+        resultDiv.textContent = `${amountValue} USD = ${result.toFixed(2)} ARS`;
+    } else {
+        result = amountValue * arsToUsd;
+        resultDiv.textContent = `${amountValue} ARS = ${result.toFixed(2)} USD`
+    };
 });
