@@ -25,6 +25,7 @@ Each project is stored in its own folder
 - `card-generator` -> Folder of the fourth project.
 - `rock-paper-scissors` -> Folder of the fifth project.
 - `school-simulator` -> Folder of the sixth project.
+- `usd-to-ars` -> Folder of the seventh project.
 ---
 
 ## Tecnologies used in the repository
