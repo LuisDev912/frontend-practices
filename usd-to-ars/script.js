@@ -24,6 +24,8 @@ const form = document.getElementById('converter-form');
 const amountInput = document.getElementById('amount');
 const directionSelect = document.getElementById('direction');
 const resultDiv = document.getElementById('result');
+const modal = document.querySelector('dollars-modal');
+const openBtn = document.getElementById('openModal');
 
 form.addEventListener('submit', e  => {
     e.preventDefault();
@@ -42,4 +44,8 @@ form.addEventListener('submit', e  => {
         result = amountValue * arsToUsd;
         resultDiv.textContent = `${amountValue} ARS = ${result.toFixed(2)} USD`
     };
+});
+
+openBtn.addEventListener('click', () => {
+    modal.shadowRoot.querySelector('.modal').classList.toggle('modal-active');
 });
