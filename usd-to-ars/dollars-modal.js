@@ -9,6 +9,16 @@ class DollarsModal extends HTMLElement {
             const data = await response.json();
 
             this.shadowRoot.innerHTML = `
+                <style>
+                    .modal {
+                    background: var(--dark-bg);
+                    color: var(--text-light);
+                    border-radius: var(--radius);
+                    box-shadow: var(--shadow);
+                    padding: 5px;
+                    }
+                </style>
+
                 <div class="modal">
                     <h2>Dollar Rates</h2>
                     ${data.map((item) => `
