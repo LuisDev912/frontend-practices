@@ -1,11 +1,30 @@
 class DollarsModal extends HTMLElement {
-    connectedCallBack() {
-        this.innerHTML = `
-        <div class="modal">
-            <h2>Types of dollars:</h2>
-            <div class"dollar-list"></div>
-        </div>
-        `;
+    constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+    }
+    async connectedCallback() {
+        try {
+            const response = await fetch('https://dolarapi.com/v1/dolares');
+            const data = await response.json();
+
+            this.shadowRoot.innerHTML = `
+                <div class="modal">
+                    <h2>Dollar Rates</h2>
+                    ${data.map((item) => `
+                        <div class="rate">
+                            <span>${item.nombre}</span>
+                            <div>
+                                <span class="buy">Buy: ${item.compra}</span> |
+                                <span class="sell">Sell: ${item.venta}</span>
+                            </div>
+                    </div>`).join('')}
+                </div>`;
+        } catch (error) {
+            this.shadowRoot.innerHTML = `<p>Error loading data.</p>`;
+            console.error('Error fetching data:', error);
+        }
     }
 }
 
+customElements.define('dollars-modal', DollarsModal);
