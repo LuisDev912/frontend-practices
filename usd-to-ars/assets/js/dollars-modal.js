@@ -11,16 +11,15 @@ class DollarsModal extends HTMLElement {
             this.shadowRoot.innerHTML = `
                 <style>
                     .modal {
-                    display: none;
-                    flex-direction: column;
-                    gap: 15px;
-                    transition: 0.1s;
-                    margin-top: 25px;
-                    background: var(--dark-bg);
-                    color: var(--text-light);
-                    border-radius: var(--radius);
-                    box-shadow: var(--shadow);
-                    padding: 5px;
+                        display: none;
+                        flex-direction: column;
+                        gap: 15px;
+                        margin-top: 25px;
+                        background: var(--dark-bg);
+                        color: var(--text-light);
+                        border-radius: var(--radius);
+                        box-shadow: var(--shadow);
+                        padding: 5px;
                     }
 
                     .modal.modal-active{
