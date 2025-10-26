@@ -1,9 +1,12 @@
 import './styles.css'
+import Counter from './counter.jsx'
 
 function App() {
-  const message = "hello world from React";
   return (
-    <h1>{ message }</h1>
+    <main className='container'>
+      <h1 className='title'>React Counter</h1>
+      <Counter/>
+    </main>
   )
 }
 
