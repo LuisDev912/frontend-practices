@@ -31,6 +31,23 @@ class DollarsModal extends HTMLElement {
                         border-radius: var(--radius);
                         padding: 5px;
                     }
+
+                    @media screen and (min-width: 625px){
+                        .modal{
+                            display: none;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 15px;
+                        }
+
+                        .modal.modal-active{
+                            display: grid;
+                        }
+
+                        .rate{
+                            width: 90%;
+                            height: auto;
+                        }
+                    }
                 </style>
 
                 <div class="modal">
