@@ -1,3 +1,5 @@
+/* --- root and body --- */
+
 :root {
     /* base */
     --primary: #1e3a8a;
@@ -37,6 +39,8 @@ body{
     font-family: var(--font-main);
 }
 
+/* --- container divs */
+
 .container{
     display: flex;
     flex-direction: column;
@@ -62,4 +66,27 @@ body{
     padding: 1rem;
     display: flex;
     gap: 15px;
+}
+
+/* --- button styles */
+
+button{
+    border-radius: var(--radius);
+    padding: 0.75rem;
+    background-color: var(--button-background);
+    color: var(--text-light);
+    font-size: 1em;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: var(--button-hover);
+}
+
+button:active{
+    background-color: var(--buttom-active);
+    box-shadow: var(--shadow);
 }
