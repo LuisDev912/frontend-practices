@@ -1,15 +1,12 @@
+import TodoItem from './TodoItem.jsx';
+
 const ToDoList = ({ tasks }) => {
     
     return (
         <div>
-            <ul>
-                <li>
-                    <input type="checkbox" name="checkTask" id="taskCheckbox" />
-                    {tasks.map((task, index) => (
-                        <label key={index}>{task}</label>
-                    ))}
-                </li>
-            </ul>
+            {tasks.map((task, index) => (
+                <TodoItem key={index} task={task} />
+            ))}
         </div>
     )
 }
