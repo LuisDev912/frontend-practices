@@ -3,7 +3,11 @@
 const ToDoList = ({ tasks }) => {
     return (
         <div>
-            {/* here the tasks will be displayed */}
+            <ul>
+                {tasks.map((task, index) => (
+                    <li key={index}>{task}</li>
+                ))}
+            </ul>
         </div>
     )
 }
