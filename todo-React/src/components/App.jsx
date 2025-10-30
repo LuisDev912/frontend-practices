@@ -1,6 +1,5 @@
-import Header from './header.jsx'
-import ToDoList from './TodoList.jsx'
-import './styles.css'
+import Header from './header.jsx';
+import ToDoList from './TodoList.jsx';
 import { useState } from 'react';
 
 function App() {
