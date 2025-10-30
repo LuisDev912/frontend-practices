@@ -4,7 +4,10 @@ import './styles.css'
 function App() {
   return (
     <>
-      <Header></Header>
+      <main>
+        <Header></Header>
+        
+      </main>
     </>
   )
 }
