@@ -71,6 +71,10 @@ main {
     text-align: center;
 }
 
+h1{
+    text-align: center;
+}
+
 /* --- tasks list --- */
 
 .tasks-section ul {
@@ -141,7 +145,8 @@ main {
 
 .form-section input[type="submit"]:active {
     background-color: var(--button-active);
-    color: var(--neutral)
+    color: var(--neutral);
+    box-shadow: var(--shadow);
 }
 
 /* --- footer --- */
@@ -152,4 +157,27 @@ footer{
     color: var(--text-light);
     opacity: 0.7;
     margin-top: 1rem;
+}
+
+/* --- media query --- */
+
+@media screen and (min-width: 750px) {
+    body{
+        align-items: center;
+    }
+
+    main {
+        max-width: 1200px;
+        min-width: 700px;
+        gap: 25px;
+    }
+
+    .tasks-info{
+        width: 50%;
+        align-self: center;
+    }
+
+    form input[type="text"] {
+        font-size: 1.05rem;
+    }
 }
