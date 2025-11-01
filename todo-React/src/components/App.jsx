@@ -35,7 +35,7 @@ function App() {
           <TodoForm onAddTask={addTask} />
         </section>
 
-        <footer className="form-container">
+        <footer>
           <p>this is a To-Do app built with React</p>
         </footer>
       </main>
