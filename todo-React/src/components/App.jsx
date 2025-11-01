@@ -1,6 +1,7 @@
 import Header from './header.jsx';
 import ToDoList from './TodoList.jsx';
 import TodoForm from './TodoForm.jsx';
+import '../styles.css';
 import { useState } from 'react';
 
 function App() {
