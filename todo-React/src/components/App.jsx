@@ -25,8 +25,8 @@ function App() {
     <>
       <main>
         <Header completed={completedCount} total={tasks.length} />
-        <TodoForm onAddTask={addTask} />
         <ToDoList tasks={tasks} onToggle={toggleTask} />
+        <TodoForm onAddTask={addTask} />
       </main>
     </>
   )
