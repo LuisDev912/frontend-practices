@@ -4,7 +4,7 @@ const Header = ({ completed = 0, total = 0 }) => {
             <h1>To-Do list</h1>
             <section className="tasks-info">
                 <p>
-                    {completed} / {total} completed
+                    {completed} / {total}
                 </p>
             </section>
         </>

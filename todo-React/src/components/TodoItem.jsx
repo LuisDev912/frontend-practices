@@ -2,6 +2,7 @@ const TodoItem = ({ task, onToggle }) => {
     const textStyle = {
         textDecoration: task.completed ? 'line-through' : 'none',
         textDecorationColor: task.completed ? 'gray' : 'inherit',
+        opacity: task.completed ? '0.6' : 'inherit'
     };
 
     function changeCheckbox() {

@@ -58,3 +58,42 @@ main {
     flex-direction: column;
     gap: 1.2rem;
 }
+
+.tasks-info{
+    border-radius: var(--radius);
+    background-color: var(--primary);
+    padding: 1rem;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.tasks-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks-section li {
+    background-color: var(--input-bg);
+    border-radius: var(--radius);
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.tasks-section li:hover {
+    background-color: var(--primary);
+}
+
+.tasks-section input[type="checkbox"] {
+    accent-color: var(--accent);
+    margin-right: 0.5rem;
+}
+
+.tasks-section label {
+    flex: 1;
+    color: var(--text-light);
+    word-break: break-word;
+}
