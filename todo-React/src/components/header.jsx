@@ -1,9 +1,10 @@
-const Header = () => {
+const Header = ({ completed = 0, total = 0 }) => {
     return (
         <>
             <h1>To-Do list</h1>
-            <h2>This is a To-Do app built with React</h2>
-            {/* I'll add more information below */}
+            <p>
+                {completed} / {total} completed
+            </p>
         </>
     );
 }

@@ -1,11 +1,11 @@
 import TodoItem from './TodoItem.jsx';
 
-const ToDoList = ({ tasks }) => {
-    
+const ToDoList = ({ tasks, onToggle }) => {
+
     return (
         <div>
-            {tasks.map((task, index) => (
-                <TodoItem key={index} task={task} />
+            {tasks.map((task) => (
+                <TodoItem key={task.id} task={task} onToggle={onToggle} />
             ))}
         </div>
     )

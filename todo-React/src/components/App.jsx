@@ -6,17 +6,27 @@ import { useState } from 'react';
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  const addTask = (newTask) => {
-    setTasks([...tasks, newTask]);
+  const addTask = (newTaskText) => {
+    const newTask = {
+      id: Date.now(),
+      text: newTaskText,
+      completed: false
+    };
+    setTasks(prev => [...prev, newTask]);
   };
 
+  const toggleTask = (id) => {
+    setTasks(prev => prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
+  };
+
+  const completedCount = tasks.filter(t => t.completed).length;
 
   return (
     <>
       <main>
-        <Header />
+        <Header completed={completedCount} total={tasks.length} />
         <TodoForm onAddTask={addTask} />
-        <ToDoList tasks={tasks} />
+        <ToDoList tasks={tasks} onToggle={toggleTask} />
       </main>
     </>
   )

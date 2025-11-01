@@ -1,23 +1,19 @@
-import { useState } from "react";
-
-const TodoItem = ({ task }) => {
-    const [isChecked, setChecked] = useState(false);
-
+const TodoItem = ({ task, onToggle }) => {
     const textStyle = {
-        textDecoration: isChecked ? 'line-through' : 'none',
-        textDecorationColor: isChecked ? 'gray' : 'inherit',
+        textDecoration: task.completed ? 'line-through' : 'none',
+        textDecorationColor: task.completed ? 'gray' : 'inherit',
     };
 
     function changeCheckbox() {
-        setChecked(!isChecked);
+        onToggle(task.id);
     }
 
     return (
         <li>
-            <input type="checkbox" id={`task-${task}`} checked={isChecked} onChange={changeCheckbox}/>
-            <label style={textStyle} htmlFor={`task-$task`}>{task}</label>
+            <input type="checkbox" id={`task-${task.id}`} checked={task.completed} onChange={changeCheckbox} />
+            <label style={textStyle} htmlFor={`task-${task.id}`}>{task.text}</label>
         </li>
     );
 };
 
-export default TodoItem; 
+export default TodoItem;
