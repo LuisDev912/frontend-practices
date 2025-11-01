@@ -27,11 +27,11 @@ function App() {
       <main>
         <Header completed={completedCount} total={tasks.length} className="header"/>
 
-        <section className="tasks-section">
+        <section aria-label='task list' className="tasks-section">
           <ToDoList tasks={tasks} onToggle={toggleTask} />
         </section>
         
-        <section className="form-section">
+        <section aria-label='add new task' className="form-section">
           <TodoForm onAddTask={addTask} />
         </section>
 

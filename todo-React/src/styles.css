@@ -1,3 +1,5 @@
+/* --- base --- */
+
 :root {
     /* base */
     --primary: #1e3a8a;
@@ -59,6 +61,8 @@ main {
     gap: 1.2rem;
 }
 
+/* --- header --- */
+
 .tasks-info{
     border-radius: var(--radius);
     background-color: var(--primary);
@@ -66,6 +70,8 @@ main {
     font-size: 1.4em;
     text-align: center;
 }
+
+/* --- tasks list --- */
 
 .tasks-section ul {
     list-style: none;
@@ -97,6 +103,8 @@ main {
     color: var(--text-light);
     word-break: break-word;
 }
+
+/* --- form --- */
 
 .form-section form {
     display: flex;
@@ -135,6 +143,8 @@ main {
     background-color: var(--button-active);
     color: var(--neutral)
 }
+
+/* --- footer --- */
 
 footer{
     text-align: center;
