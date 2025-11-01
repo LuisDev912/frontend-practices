@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <main>
-        <Header completed={completedCount} total={tasks.length} />
+        <Header completed={completedCount} total={tasks.length} className="header"/>
 
         <section className="tasks-section">
           <ToDoList tasks={tasks} onToggle={toggleTask} />
