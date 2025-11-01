@@ -4,7 +4,7 @@ const ToDoList = ({ tasks, onToggle }) => {
 
     return (
         <div>
-            <ul>
+            <ul className="tasks">
                 {tasks.map((task) => (
                     <TodoItem key={task.id} task={task} onToggle={onToggle} />
                 ))}

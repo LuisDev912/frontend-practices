@@ -25,8 +25,18 @@ function App() {
     <>
       <main>
         <Header completed={completedCount} total={tasks.length} />
-        <ToDoList tasks={tasks} onToggle={toggleTask} />
-        <TodoForm onAddTask={addTask} />
+
+        <section className="tasks-section">
+          <ToDoList tasks={tasks} onToggle={toggleTask} />
+        </section>
+        
+        <section className="form-section">
+          <TodoForm onAddTask={addTask} />
+        </section>
+
+        <footer className="form-container">
+          <p>this is a To-Do app built with React</p>
+        </footer>
       </main>
     </>
   )
