@@ -15,7 +15,7 @@ function Pencil() {
     )
 }
 
-const TodoItem = ({ task, onToggle }) => {
+const TodoItem = ({ task, onToggle, onEdit }) => {
     const [editable, setEditable] = useState(false);
     const [newText, setNewText] = useState(task.text);
 
@@ -29,16 +29,16 @@ const TodoItem = ({ task, onToggle }) => {
         onToggle(task.id);
     }
 
-    function changeEditable() {
-        setEditable(!editable);
-    }
-
     function handleEditSubmit(e) {
         e.preventDefault();
         if (newText.trim()) {
             onEdit(task.id, newText);
             setEditable(false);
         }
+    }
+
+    function changeEditable() {
+        setEditable(!editable);
     }
 
         return (

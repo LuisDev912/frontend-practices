@@ -16,6 +16,15 @@ function App() {
     setTasks(prev => [...prev, newTask]);
   };
 
+  const handleEdit = (id, newText) => {
+    setTasks(prevTasks =>
+      prevTasks.map(task =>
+        task.id === id ? { ...task, text: newText } : task
+      )
+    );
+  };
+
+
   const toggleTask = (id) => {
     setTasks(prev => prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
   };
@@ -28,7 +37,7 @@ function App() {
         <Header completed={completedCount} total={tasks.length} className="header"/>
 
         <section aria-label='task list' className="tasks-section">
-          <ToDoList tasks={tasks} onToggle={toggleTask} />
+          <ToDoList tasks={tasks} onToggle={toggleTask} onEdit={handleEdit} />
         </section>
         
         <section aria-label='add new task' className="form-section">
