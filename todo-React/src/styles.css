@@ -159,6 +159,15 @@ footer{
     margin-top: 1rem;
 }
 
+/* button */
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
 /* --- media query --- */
 
 @media screen and (min-width: 750px) {
