@@ -31,8 +31,14 @@ const TodoItem = ({ task, onToggle }) => {
 
     function changeEditable() {
         setEditable(!editable);
+    }
 
-        console.log("editing...");
+    function handleEditSubmit(e) {
+        e.preventDefault();
+        if (newText.trim()) {
+            onEdit(task.id, newText);
+            setEditable(false);
+        }
     }
 
         return (
