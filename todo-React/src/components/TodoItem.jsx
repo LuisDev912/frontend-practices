@@ -38,7 +38,26 @@ const TodoItem = ({ task, onToggle }) => {
             <li>
                 <input aria-label="mark task as done" type="checkbox" id={`task-${task.id}`} checked={task.completed} onChange={changeCheckbox} />
 
-                <label aria-label="task" style={textStyle} htmlFor={`task-${task.id}`}>{task.text}</label>
+                {editable ? (
+                    <form onSubmit={handleEditSubmit} style={{ display: 'inline' }}>
+                        <input
+                            type="text"
+                            value={newText}
+                            onChange={(e) => setNewText(e.target.value)}
+                            onBlur={handleEditSubmit}
+                            autoFocus
+                        />
+                    </form>
+                ) : (
+                    <label
+                        aria-label="task"
+                        style={textStyle}
+                        htmlFor={`task-${task.id}`}
+                    >
+                        {task.text}
+                    </label>
+                )}
+
 
                 <button aria-label="edit task" onClick={changeEditable}>
                     {Pencil()}
