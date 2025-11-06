@@ -26,6 +26,9 @@ Each project is stored in its own folder
 - `rock-paper-scissors` -> Folder of the fifth project.
 - `school-simulator` -> Folder of the sixth project.
 - `usd-to-ars` -> Folder of the seventh project.
+- `todo-React` -> Folder of the eighth project.
+- `irregular-verbs-js` -> Folder of the ninth project.
+
 ---
 
 ## Tecnologies used in the repository
