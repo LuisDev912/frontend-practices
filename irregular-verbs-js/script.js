@@ -47,3 +47,21 @@ newVerbBtn.addEventListener('click', () => {
         answerInput.focus();
     }, 1000);
 });
+
+checkBtn.addEventListener('click', () => {
+    if (!currentVerb) {
+        resultText.innerHTML = `First click <i>"New verb"</i> !`;
+        return;
+    }
+
+    const userAnswer = answerInput.value.trim().toLowerCase();
+    const correctAnswer = currentVerb.past.toLowerCase();
+
+    if (userAnswer === correctAnswer) {
+        resultText.textContent = 'Correct!';
+        resultText.style.color = 'limegreen';
+    } else {
+        resultText.textContent = `Wrong! The correct answer was "${currentVerb.past}".`;
+        resultText.style.color = 'crimson';
+    }
+});
