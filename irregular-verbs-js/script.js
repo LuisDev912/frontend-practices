@@ -4,7 +4,9 @@ fetch('verbs.json')
         return res.json();
     })
     .then((verbs) => {
-        console.log(verbs);
+        verbs.forEach(verb => {
+            console.log(verb.past, '→', verb.past);
+        });
     })
     .catch((err) => {
         console.error(err);
