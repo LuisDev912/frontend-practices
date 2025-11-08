@@ -2,6 +2,8 @@
 const verbsContainer = document.querySelector('.verbs-container');
 const verbsSection = document.querySelector('.verbs-section');
 const loadVerbsBtn = document.getElementById('load-verbs-btn');
+const newVerbBtn = document.getElementById('new-verb-button');
+const selectedVerb = document.getElementById('selected-verb');
 
 fetch('verbs.json')
     .then(res => {
@@ -20,5 +22,13 @@ fetch('verbs.json')
     })
 
 loadVerbsBtn.addEventListener('click', () => {
-    verbsContainer.classList.toggle('active')
+    verbsContainer.classList.toggle('active');
 });
+
+newVerbBtn.addEventListener('click', () => { 
+    selectedVerb.textContent = `the verb is...`;
+
+    setTimeout(() => {
+        selectedVerb.textContent = 'ran';
+    }, 1000);
+})
