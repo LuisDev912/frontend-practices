@@ -29,6 +29,6 @@ newVerbBtn.addEventListener('click', () => {
     selectedVerb.textContent = `the verb is...`;
 
     setTimeout(() => {
-        selectedVerb.textContent = 'ran';
+        selectedVerb.textContent = 'run';
     }, 1000);
 })
