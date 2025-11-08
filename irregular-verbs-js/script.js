@@ -1,5 +1,7 @@
 // elements selectors
 const verbsContainer = document.querySelector('.verbs-container');
+const verbsSection = document.querySelector('.verbs-section');
+const loadVerbsBtn = document.getElementById('load-verbs-btn');
 
 fetch('verbs.json')
     .then(res => {
@@ -16,3 +18,7 @@ fetch('verbs.json')
     .catch((err) => {
         console.error(err);
     })
+
+loadVerbsBtn.addEventListener('click', () => {
+    verbsContainer.classList.toggle('active')
+});

@@ -33,3 +33,11 @@
 body {
     font-family: var(--font-main);
 }
+
+#verbs-container{
+    display: none;
+}
+
+#verbs-container.active{
+    display: block;
+}
