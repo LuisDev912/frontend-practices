@@ -1,3 +1,6 @@
+// elements selectors
+const verbsContainer = document.querySelector('.verbs-container');
+
 fetch('verbs.json')
     .then(res => {
         if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
@@ -5,7 +8,9 @@ fetch('verbs.json')
     })
     .then((verbs) => {
         verbs.forEach(verb => {
-            console.log(verb.past, '→', verb.past);
+            const p = document.createElement('p');
+            verbsContainer.appendChild(p);
+            p.textContent = `${verb.past} → ${verb.past}`;
         });
     })
     .catch((err) => {
