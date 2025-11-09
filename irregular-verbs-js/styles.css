@@ -32,6 +32,14 @@
 
 body {
     font-family: var(--font-main);
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    min-height: 100vh;
+    padding: 2rem 0;
 }
 
 #verbs-container{
@@ -40,4 +48,35 @@ body {
 
 #verbs-container.active{
     display: block;
+}
+
+input,
+button {
+    width: 90%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: var(--radius);
+}
+
+input {
+    background: var(--input-bg);
+    color: var(--text-light);
+}
+
+button {
+    background: var(--button-background);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+button:active {
+    background: var(--button-active);
+    box-shadow: var(--shadow);
 }
