@@ -105,3 +105,9 @@ footer{
     display: flex;
     gap: 15px;
 }
+
+.verbs-container{
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    background-color: #274baf;
+}
