@@ -36,10 +36,9 @@ body {
     color: var(--text-light);
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 5px;
-    min-height: 100vh;
-    padding: 2rem 0;
 }
 
 #verbs-container{
@@ -79,4 +78,30 @@ button:hover {
 button:active {
     background: var(--button-active);
     box-shadow: var(--shadow);
+}
+
+header{
+    text-decoration: underline var(--accent);
+    font-style: italic;
+    text-align: center;
+}
+
+footer{
+    font-style: italic;
+    
+}
+
+.main-container {
+    background: var(--primary);
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.btn-group{
+    display: flex;
+    gap: 15px;
 }
