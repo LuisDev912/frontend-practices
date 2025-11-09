@@ -22,6 +22,7 @@ fetch('verbs.json')
         verbs.forEach(verb => {
             const p = document.createElement('p');
             verbsContainer.appendChild(p);
+            p.setAttribute('role', 'listitem');
             p.textContent = `${verb.infinitive} → ${verb.past}`;
         });
     })
@@ -30,6 +31,8 @@ fetch('verbs.json')
     });
 
 loadVerbsBtn.addEventListener('click', () => {
+    const expanded = loadVerbsBtn.getAttribute('aria-expanded') === 'true';
+    loadVerbsBtn.setAttribute('aria-expanded', !expanded);
     verbsContainer.classList.toggle('active');
 });
 
@@ -51,6 +54,8 @@ newVerbBtn.addEventListener('click', () => {
 checkBtn.addEventListener('click', () => {
     if (!currentVerb) {
         resultText.innerHTML = `First click <i>"New verb"</i> !`;
+        resultText.style.color = 'orange';
+        resultText.focus();
         return;
     }
 
@@ -64,4 +69,7 @@ checkBtn.addEventListener('click', () => {
         resultText.textContent = `Wrong! The correct answer was "${currentVerb.past}".`;
         resultText.style.color = 'crimson';
     }
+
+    resultText.setAttribute('role', 'alert');
+    resultText.focus();
 });

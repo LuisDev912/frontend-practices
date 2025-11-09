@@ -11,36 +11,42 @@
     <h1>Irregular Verbs Practice</h1>
 </header>
 
-<main class="main-container">
-    <section class="verbs-section">
-        <h2>verbs list </h2>
-        <button id="load-verbs-btn">Load verbs</button>
-        <div class="verbs-container" id="verbs-container">
-            <!-- fetch will show verbs here  -->
-        </div>
-    </section>
+    <main class="main-container">
+        <!-- Verb list section -->
+        <section class="verbs-section" aria-labelledby="verbs-title">
+            <h2 id="verbs-title">Verbs list</h2>
+            <button id="load-verbs-btn" aria-label="Load the list of irregular verbs"> Load verbs </button>
 
-    <hr>
-
-    <!-- practice section -->
-    <section class="practice-section">
-        <h2>Practice mode</h2>
-        <div class="practice-card">
-            <p id="random-verb">Press <i>"new verb"</i> to start</p>
-
-            <p id="selected-verb"></p>
-            
-            <input type="text" id="user-answer" placeholder="write the past...">
-
-            <div class="btn-group">
-                <button id="check-button">Check</button>
-                <button id="new-verb-button">New verb</button>
+            <div class="verbs-container" id="verbs-container" role="list">
+                <!-- verbs will appear here -->
             </div>
+        </section>
 
-            <p id="result-message"></p>
-        </div>
-    </section>
-</main>
+        <hr aria-hidden="true" />
+
+        <!-- Practice section -->
+        <section class="practice-section" aria-labelledby="practice-title">
+            <h2 id="practice-title">Practice mode</h2>
+
+            <div class="practice-card">
+                <!-- dynamic text -->
+                <p id="random-verb">Press <i>“New verb”</i> to start</p>
+
+                <!-- current verb -->
+                <p id="selected-verb" aria-live="polite"></p>
+
+                <label for="user-answer" class="visually-hidden">Write the past form</label>
+                <input type="text" id="user-answer" placeholder="Write the past..." />
+
+                <div class="btn-group">
+                    <button id="check-button">Check</button>
+                    <button id="new-verb-button">New verb</button>
+                </div>
+
+                <p id="result-message" aria-live="assertive"></p>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <p>Created for English practice</p>
