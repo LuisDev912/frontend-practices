@@ -11,7 +11,7 @@ const resultText = document.getElementById('result-message');
 let verbsArray = [];
 let currentVerb = null;
 
-fetch('verbs.json')
+fetch('./assets/json/verbs.json')
     .then(res => {
         if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
         return res.json();
