@@ -11,6 +11,11 @@ const resultText = document.getElementById('result-message');
 let verbsArray = [];
 let currentVerb = null;
 
+let incorrectAnswers;
+let correctAnswers;
+
+// fetchs
+
 fetch('./assets/json/verbs.json')
     .then(res => {
         if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
@@ -29,6 +34,18 @@ fetch('./assets/json/verbs.json')
     .catch((err) => {
         console.error(err);
     });
+
+fetch('./assets/json/user_info.json')
+    .then(res => {
+        if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
+        return res.json();
+    })
+    .then((info) => {
+        console.log(info);
+    })
+    .catch(err => { console.error(err)});
+
+// addEventListeners
 
 loadVerbsBtn.addEventListener('click', () => {
     const expanded = loadVerbsBtn.getAttribute('aria-expanded') === 'true';
