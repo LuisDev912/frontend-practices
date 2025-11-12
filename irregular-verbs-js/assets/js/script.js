@@ -7,6 +7,8 @@ const selectedVerb = document.getElementById('selected-verb');
 const checkBtn = document.getElementById('check-button');
 const answerInput = document.getElementById('user-answer');
 const resultText = document.getElementById('result-message');
+const correctAnswerText = document.getElementById('correct_Answers');
+const incorrectAnswersText = document.getElementById('incorrect_Answers');
 
 let verbsArray = [];
 let currentVerb = null;
