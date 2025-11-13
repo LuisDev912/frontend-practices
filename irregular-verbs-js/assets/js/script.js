@@ -16,6 +16,10 @@ let currentVerb = null;
 let incorrectAnswers = Number(localStorage.getItem('incorrectAnswers')) || 0;;
 let correctAnswers = Number(localStorage.getItem('correctAnswers')) || 0;
 
+// show the values
+correctAnswerText.textContent = correctAnswers;
+incorrectAnswersText.textContent = incorrectAnswers;
+
 // fetchs
 
 fetch('./assets/json/verbs.json')
@@ -74,10 +78,19 @@ checkBtn.addEventListener('click', () => {
     if (userAnswer === correctAnswer) {
         resultText.textContent = 'Correct!';
         resultText.style.color = 'limegreen';
+        correctAnswers++;
     } else {
         resultText.textContent = `Wrong! The correct answer was "${currentVerb.past}".`;
         resultText.style.color = 'crimson';
+        incorrectAnswers++;
     }
+
+    // update localStorage
+    correctAnswerText.textContent = `you answered ${correctAnswers} times correctly`;
+    incorrectAnswersText.textContent = `you answered ${incorrectAnswers} times wrong`;
+
+    localStorage.setItem('correctAnswers', correctAnswers);
+    localStorage.setItem('incorrectAnswers', incorrectAnswers);
 
     resultText.setAttribute('role', 'alert');
     resultText.focus();
