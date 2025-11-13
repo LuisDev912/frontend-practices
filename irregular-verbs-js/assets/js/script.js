@@ -13,8 +13,8 @@ const incorrectAnswersText = document.getElementById('incorrect_Answers');
 let verbsArray = [];
 let currentVerb = null;
 
-let incorrectAnswers;
-let correctAnswers;
+let incorrectAnswers = Number(localStorage.getItem('incorrectAnswers')) || 0;;
+let correctAnswers = Number(localStorage.getItem('correctAnswers')) || 0;
 
 // fetchs
 
@@ -36,21 +36,6 @@ fetch('./assets/json/verbs.json')
     .catch((err) => {
         console.error(err);
     });
-
-fetch('./assets/json/user_info.json')
-    .then(res => {
-        if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
-        return res.json();
-    })
-    .then((info) => {
-        info.forEach(data => {
-            correctAnswers = data.correct;
-            incorrectAnswers = data.incorrect;
-        });
-        correctAnswerText.textContent = correctAnswers;
-        incorrectAnswersText.textContent = incorrectAnswers
-    })
-    .catch(err => { console.error(err)});
 
 // addEventListeners
 
