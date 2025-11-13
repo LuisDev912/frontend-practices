@@ -43,7 +43,12 @@ fetch('./assets/json/user_info.json')
         return res.json();
     })
     .then((info) => {
-        console.log(info);
+        info.forEach(data => {
+            correctAnswers = data.correct;
+            incorrectAnswers = data.incorrect;
+        });
+        correctAnswerText.textContent = correctAnswers;
+        incorrectAnswersText.textContent = incorrectAnswers
     })
     .catch(err => { console.error(err)});
 
