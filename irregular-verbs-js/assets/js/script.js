@@ -86,8 +86,8 @@ checkBtn.addEventListener('click', () => {
     }
 
     // update localStorage
-    correctAnswerText.textContent = `you answered ${correctAnswers} times correctly`;
-    incorrectAnswersText.textContent = `you answered ${incorrectAnswers} times wrong`;
+    correctAnswerText.textContent = correctAnswers;
+    incorrectAnswersText.textContent = incorrectAnswers;
 
     localStorage.setItem('correctAnswers', correctAnswers);
     localStorage.setItem('incorrectAnswers', incorrectAnswers);
