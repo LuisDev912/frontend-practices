@@ -13,7 +13,7 @@ const incorrectAnswersText = document.getElementById('incorrect_Answers');
 let verbsArray = [];
 let currentVerb = null;
 
-let incorrectAnswers = Number(localStorage.getItem('incorrectAnswers')) || 0;;
+let incorrectAnswers = Number(localStorage.getItem('incorrectAnswers')) || 0;
 let correctAnswers = Number(localStorage.getItem('correctAnswers')) || 0;
 
 // show the values
