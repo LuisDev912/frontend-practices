@@ -7,12 +7,14 @@ It demonstrates DOM manipulation, event handling, and dynamic styling.
 
 ## Project Structure
 
+```
 TO-DO/
 │
 ├── index.html # Main page displaying the to-do list
 ├── styles.css # Styling for the page
 ├── script.js # Logic for adding, marking, and removing tasks
 └── website-layout.png # Low-fidelity design mockup
+```
 
 ---
 
