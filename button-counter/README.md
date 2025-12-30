@@ -6,11 +6,13 @@ It demonstrates how to manipulate the DOM and handle button click events.
 
 ## Project Structure
 
+```
 button-counter/
 │
 ├── index.html # Main page with counter display and buttons
 ├── styles.css # Styling for the page
 └── script.js # Logic for counter functionality
+```
 
 ---
 
