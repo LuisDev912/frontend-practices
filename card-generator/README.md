@@ -6,6 +6,7 @@ This project demonstrates how to use **LocalStorage** to save user input and sho
 
 ## Project Structure
 
+```
 card-generator/
 │
 ├── index.html # Displays all generated cards
@@ -24,6 +25,7 @@ card-generator/
 │ └── logo.png # Example image (HTML logo for testing)
 │
 ├── README.md # Explains the project
+```
 
 ---
 
