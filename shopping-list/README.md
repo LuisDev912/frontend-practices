@@ -7,15 +7,17 @@ It demonstrates **table manipulation, form validation, and LocalStorage usage**.
 
 ## Project Structure
 
-├── assets
-│ ├── css
+```
+├── assets/
+│ ├── css/
 │ │ ├── styles.css # Principal styles
 │ │ └── responsive.css # Styles for media queries/responsive
-│ ├── js
+│ ├── js/
 │ │ └── script.js # Functionalities
 ├── index.html # Principal page
 ├── LICENSE # Project license
 └── README.md # Project documentation
+```
 
 ---
 
@@ -24,7 +26,8 @@ It demonstrates **table manipulation, form validation, and LocalStorage usage**.
 - Table with columns:
   - **Name**  
   - **Price**  
-  - **Amount**  
+  - **Amount**
+  - **Actions**
 - Add new products using the "Add Product" button → new row is created.  
 - Calculate totals using the "Calculate" button.  
 - **Validation**: all inputs in a row must be filled for "Calculate" to work; "Add Product" works even if some fields are empty.  
