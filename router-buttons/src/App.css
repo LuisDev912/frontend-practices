@@ -1,6 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  background-color: #0D1B2A;
+  color: #F5F5F5;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+
+button{
+  padding: 1rem 2rem;
+  background-color: #2a3847;
+  color: #1A1A1A;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 250ms;
+  border: none;
+  border-radius: 4px;
+  transition-property: background-color, box-shadow, border;
+}
+
+button:hover{
+  background-color: #CCCCCC;
+  border: 3px solid #C8A45C;
+}
+
+button:active{
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.623);;
 }
