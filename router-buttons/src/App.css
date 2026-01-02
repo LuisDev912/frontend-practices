@@ -20,14 +20,18 @@ button{
   transition: 250ms;
   border: none;
   border-radius: 4px;
-  transition-property: background-color, box-shadow, border;
+  transition-property: background-color, box-shadow;
 }
 
 button:hover{
   background-color: #CCCCCC;
-  border: 3px solid #C8A45C;
 }
 
 button:active{
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.623);;
+}
+
+:focus-visible{
+  outline-offset: 3px;
+  outline: 3px solid #C8A45C;
 }
