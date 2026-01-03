@@ -1,7 +1,7 @@
-import { useNavigation } from "react-router";
+import { useNavigate } from "react-router";
 
 export default function HomePage(){
-    const navigate = useNavigation();
+    const navigate = useNavigate();
 
     return(
         <section>
