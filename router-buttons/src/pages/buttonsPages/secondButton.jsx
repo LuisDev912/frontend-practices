@@ -5,7 +5,20 @@ export default function secondButton(){
 
     return(
         <section>
-            
+            <p>The second button leads to this page.</p>
+            <div className="buttonsContainer">
+                <button
+                    onClick={() => navigate('/start')}
+                >
+                    Previous page
+                </button>
+
+                <button
+                    onClick={() => navigate('/')}
+                >
+                    Home
+                </button>
+            </div>
         </section>
     );
 };
