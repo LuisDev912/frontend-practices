@@ -5,7 +5,16 @@ export default function thirdButton(){
 
     return(
         <section>
-            <p>The third button leads to this page.</p>
+            <p>
+                The first button leads to this page.
+                <br />
+                This is a different page, so the url may look like this:
+                <div className="url">
+                    <code>
+                        /start/three
+                    </code>
+                </div>
+            </p>
             <div className="buttonsContainer">
                 <button
                     onClick={() => navigate('/start')}

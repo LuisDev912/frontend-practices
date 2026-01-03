@@ -5,7 +5,16 @@ export default function firstButton(){
 
     return(
         <section>
-            <p>The first button leads to this page.</p>
+            <p>
+                The first button leads to this page.
+                <br />
+                This is a different page, so the url may look like this:
+                <div className="url">
+                    <code>
+                        /start/one
+                    </code>
+                </div>
+            </p>
             <div className="buttonsContainer">
                 <button
                     onClick={() => navigate('/start')}
