@@ -9,7 +9,7 @@ export default function NotFoundPage(){
             <p>The page you were looking for does not exist. Click the next button to return to the main page</p>
 
             <button
-                onClick={() => navigate('./')}
+                onClick={() => navigate('/')}
             >
                 Home
             </button>
