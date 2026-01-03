@@ -2,7 +2,15 @@ body{
   background-color: #0D1B2A;
   color: #F5F5F5;
   line-height: 1.6;
+  margin: 0;
   box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+header{
+  border-bottom: 2px solid #575757;
+  font-size: clamp(1.2em, 4vw, 2rem)
 }
 
 main{
@@ -10,6 +18,11 @@ main{
   flex-direction: column;
 }
 
+footer{
+  margin-top: 15px;
+  border-top: 2px solid #575757;
+  font-style: italic;
+}
 
 button{
   padding: 1rem 2rem;
