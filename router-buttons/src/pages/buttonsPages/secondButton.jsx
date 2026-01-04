@@ -10,9 +10,11 @@ export default function secondButton(){
                 <br />
                 This is a different page, so the url may look like this:
                 <div className="url">
-                    <code>
-                        /start/two
-                    </code>
+                    <pre>
+                        <code>
+                            /start/two
+                        </code>
+                    </pre>
                 </div>
             </p>
             <div className="buttonsContainer">

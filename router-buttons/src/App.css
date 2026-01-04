@@ -59,3 +59,19 @@ button:active{
   flex-flow: column wrap;
   gap: 15px;
 }
+
+code {
+  background-color: #333333;
+  color: #ffb703
+}
+
+pre code {
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+  max-width: fit-content;
+  background-color: #121212;
+  padding: 1rem;
+  font-size: 1.4em;
+  color: #e0e0e0;
+}
