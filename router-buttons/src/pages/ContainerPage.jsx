@@ -8,7 +8,7 @@ export default function ContainerPage(){
             <p>
                 Now that you are here, you can click any of the following buttons:
             </p>
-            <div className="buttonsContainer">
+            <div className="buttonsContainerMain">
                 <button
                     onClick={() => navigate('/start/one')}
                 >

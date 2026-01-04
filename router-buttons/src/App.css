@@ -26,7 +26,7 @@ footer{
 
 button{
   padding: 1rem 2rem;
-  background-color: #2a3847;
+  background-color: #C8A45C;
   color: #1A1A1A;
   font-weight: 650;
   cursor: pointer;
@@ -37,14 +37,25 @@ button{
 }
 
 button:hover{
-  background-color: #CCCCCC;
+  background-color: #967b46;
 }
 
 button:active{
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.623);;
+  box-shadow: 1px 2px 8px rgba(178, 210, 247, 0.623);;
 }
 
 :focus-visible{
   outline-offset: 3px;
   outline: 3px solid #C8A45C;
+}
+
+.buttonsContainerMain{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonsContainer{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
 }
