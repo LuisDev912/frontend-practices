@@ -28,6 +28,7 @@ Each project is stored in its own folder
 - `usd-to-ars` -> Folder of the seventh project.
 - `todo-React` -> Folder of the eighth project.
 - `irregular-verbs-js` -> Folder of the ninth project.
+- `router-buttons` -> Folder of the tenth project.
 
 ---
 
