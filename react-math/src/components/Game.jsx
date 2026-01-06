@@ -8,8 +8,11 @@ function Game(){
     const [secondNumber, setSecondNumber] = useState(0);
 
     const randomGenerate = () =>{
-        setFirstNumber(Math.floor(Math.random() * 50) + 1)
-        setSecondNumber(Math.floor(Math.random() * 50) + 1)
+        const a = Math.floor(Math.random() * 50) + 1;
+        const b = Math.floor(Math.random() * 50) + 1;
+
+        setFirstNumber(a)
+        setSecondNumber(b)
     }
 
     return(
