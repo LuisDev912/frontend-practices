@@ -1,20 +1,22 @@
 import { useState } from "react";
 
+// child component
+import GenerateButton from './GenerateButton.jsx';
 
 function Game(){
     const [firstNumber, setFirstNumber] = useState(0);
     const [secondNumber, setSecondNumber] = useState(0);
 
-    const generateNumbers = () =>{
-        setFirstNumber(Math.floor(Math.random() * 100))
-        setSecondNumber(Math.floor(Math.random() * 100))
+    const randomGenerate = () =>{
+        setFirstNumber(Math.floor(Math.random() * 50) + 1)
+        setSecondNumber(Math.floor(Math.random() * 50) + 1)
     }
 
     return(
-        <div className="box">
+        <section className="box">
             <h1>{firstNumber} + {secondNumber}</h1>
-            <button onClick={generateNumbers}>test</button>
-        </div>
+            <GenerateButton onGenerate={randomGenerate} />
+        </section>
     )
 }
 
