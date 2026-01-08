@@ -3,6 +3,7 @@ import { useState } from "react";
 // child components
 import GenerateButton from './GenerateButton.jsx';
 import OperationDIsplay from "./OperationDisplay.jsx";
+import AnswerForm from "./AnswerForm.jsx";
 
 function Game(){
     const [firstNumber, setFirstNumber] = useState(0);
@@ -16,10 +17,18 @@ function Game(){
         setSecondNumber(b)
     }
 
+    const validate = (answer) =>{
+        if((firstNumber + secondNumber) === answer){
+            alert("You're correct")
+        }
+    }
+
     return(
         <section className="box">
             <OperationDIsplay numOne={firstNumber} numTwo={secondNumber}/>
             <GenerateButton onGenerate={randomGenerate} />
+
+            <AnswerForm onValidate={validate}/>
         </section>
     )
 }
