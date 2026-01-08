@@ -1,22 +1,25 @@
 import { useRef } from "react";
 
-function AnswerForm({ onValidate }){
+function AnswerForm({ onValidate, reset }){
     const answerRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const value = Number(answerRef.current.value);
         onValidate(value)
+        answerRef.current.value = ''
     }
 
     return(
         <form 
             id="answer-form"
-            onSubmit={handleSubmit}    
+            onSubmit={handleSubmit} 
         >
             <input 
                 type="number"
                 placeholder="type the result"
+                min="0"
+                required
                 ref={answerRef}
             />
 

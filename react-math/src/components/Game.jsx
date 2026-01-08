@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Activity, useState } from "react";
 
 // child components
 import GenerateButton from './GenerateButton.jsx';
@@ -8,6 +8,7 @@ import AnswerForm from "./AnswerForm.jsx";
 function Game(){
     const [firstNumber, setFirstNumber] = useState(0);
     const [secondNumber, setSecondNumber] = useState(0);
+    const [correct, isCorrect] = useState(false);
 
     const randomGenerate = () =>{
         const a = Math.floor(Math.random() * 50) + 1;
@@ -15,12 +16,11 @@ function Game(){
 
         setFirstNumber(a)
         setSecondNumber(b)
+        isCorrect(false);
     }
 
-    const validate = (answer) =>{
-        if((firstNumber + secondNumber) === answer){
-            alert("You're correct")
-        }
+    const handleValidation = (answer) =>{
+        isCorrect(firstNumber + secondNumber === answer)
     }
 
     return(
@@ -28,7 +28,18 @@ function Game(){
             <OperationDIsplay numOne={firstNumber} numTwo={secondNumber}/>
             <GenerateButton onGenerate={randomGenerate} />
 
-            <AnswerForm onValidate={validate}/>
+            <AnswerForm onValidate={handleValidation} />
+
+            <Activity mode={correct ? "visible" : "hidden"}>
+                <p
+                    style={{
+                        color: '#1cdd66'
+                    }}
+                >
+                    This is correct!
+                </p>
+            </Activity>
+
         </section>
     )
 }
