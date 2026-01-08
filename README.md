@@ -29,6 +29,7 @@ Each project is stored in its own folder
 - `todo-React` -> Folder of the eighth project.
 - `irregular-verbs-js` -> Folder of the ninth project.
 - `router-buttons` -> Folder of the tenth project.
+- `react-math` -> Folder of the eleventh project.
 
 ---
 
