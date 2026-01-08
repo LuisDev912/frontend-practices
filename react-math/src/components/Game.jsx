@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-// child component
+// child components
 import GenerateButton from './GenerateButton.jsx';
+import OperationDIsplay from "./OperationDisplay.jsx";
 
 function Game(){
     const [firstNumber, setFirstNumber] = useState(0);
@@ -17,7 +18,7 @@ function Game(){
 
     return(
         <section className="box">
-            <h1>{firstNumber} + {secondNumber}</h1>
+            <OperationDIsplay numOne={firstNumber} numTwo={secondNumber}/>
             <GenerateButton onGenerate={randomGenerate} />
         </section>
     )
