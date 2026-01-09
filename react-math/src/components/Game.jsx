@@ -15,15 +15,16 @@ function Game(){
         const a = Math.floor(Math.random() * 50) + 1;
         const b = Math.floor(Math.random() * 50) + 1;
 
-        setFirstNumber(a)
-        setSecondNumber(b)
+        setFirstNumber(a);
+        setSecondNumber(b);
         setCorrect(false);
+        setShowError(false);
     }
 
     const handleValidation = (answer) =>{
-        setCorrect(firstNumber + secondNumber === answer)
+        setCorrect(firstNumber + secondNumber === answer);
         setShowError(!(firstNumber + secondNumber === answer));
-    }
+    };
 
     return(
         <section className="box">
@@ -48,7 +49,7 @@ function Game(){
                 </p>
             </Activity>
         </section>
-    )
-}
+    );
+};
 
 export default Game;
