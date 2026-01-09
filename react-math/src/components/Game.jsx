@@ -8,7 +8,8 @@ import AnswerForm from "./AnswerForm.jsx";
 function Game(){
     const [firstNumber, setFirstNumber] = useState(0);
     const [secondNumber, setSecondNumber] = useState(0);
-    const [correct, isCorrect] = useState(false);
+    const [correct, setCorrect] = useState(false);
+    const [showError, setShowError] = useState(false);
 
     const randomGenerate = () =>{
         const a = Math.floor(Math.random() * 50) + 1;
@@ -16,11 +17,12 @@ function Game(){
 
         setFirstNumber(a)
         setSecondNumber(b)
-        isCorrect(false);
+        setCorrect(false);
     }
 
     const handleValidation = (answer) =>{
-        isCorrect(firstNumber + secondNumber === answer)
+        setCorrect(firstNumber + secondNumber === answer)
+        setShowError(!(firstNumber + secondNumber === answer));
     }
 
     return(
@@ -40,6 +42,11 @@ function Game(){
                 </p>
             </Activity>
 
+            <Activity mode={showError ? "visible" : "hidden"}>
+                <p>
+                    This is not correct. The answer is: {firstNumber + secondNumber}
+                </p>
+            </Activity>
         </section>
     )
 }
