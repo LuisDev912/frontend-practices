@@ -95,17 +95,20 @@ button:active{
 
 /* --- input */
 
-input{
+#answer-input{
   background-color: var(--input-bg);
   border: none;
   padding: 0.5rem;
   font-size: .8em;
   color: var(--text-light);
   border-radius: var(--radius);
-  margin: 5px;
 }
 
-
+#answer-form{
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
 
 #answer-submit{
   padding: 2px;
