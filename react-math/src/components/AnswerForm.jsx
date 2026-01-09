@@ -1,6 +1,7 @@
 import { useRef } from "react";
+import { SendButton } from "../assets/SendButton.jsx";
 
-function AnswerForm({ onValidate, reset }){
+function AnswerForm({ onValidate }){
     const answerRef = useRef();
 
     const handleSubmit = (e) => {
@@ -16,6 +17,7 @@ function AnswerForm({ onValidate, reset }){
             onSubmit={handleSubmit} 
         >
             <input 
+                id="answer-input"
                 type="number"
                 placeholder="type the result"
                 min="0"
@@ -23,10 +25,12 @@ function AnswerForm({ onValidate, reset }){
                 ref={answerRef}
             />
 
-            <input 
-                type="submit" 
-                value="send"
-            />
+            <button
+                id="answer-submit"
+                type="submit"
+            >
+                <SendButton />
+            </button>
         </form>
     )
 };
