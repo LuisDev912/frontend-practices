@@ -33,21 +33,24 @@ function Game(){
 
             <AnswerForm onValidate={handleValidation} />
 
-            <Activity mode={correct ? "visible" : "hidden"}>
-                <p
-                    style={{
-                        color: '#1cdd66'
-                    }}
-                >
-                    This is correct!
-                </p>
-            </Activity>
+            <div className="messages">
+                <Activity mode={correct ? "visible" : "hidden"}>
+                    <p
+                        style={{
+                            color: '#1cdd66'
+                        }}
+                    >
+                        This is correct!
+                    </p>
+                </Activity>
 
-            <Activity mode={showError ? "visible" : "hidden"}>
-                <p>
-                    This is not correct. The answer is: {firstNumber + secondNumber}
-                </p>
-            </Activity>
+                <Activity mode={showError ? "visible" : "hidden"}>
+                    <p>
+                        This is not correct. The answer is: {firstNumber + secondNumber}
+                    </p>
+                </Activity>
+            </div>
+
         </section>
     );
 };
