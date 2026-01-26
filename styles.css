@@ -93,6 +93,11 @@ h1{
     font-family: var(--font-family-title);
 }
 
+h2{
+    font-weight: var(--weight-regular);
+    font-style: italic;
+}
+
 /* --- accessibility --- */
 
 :focus-visible {
