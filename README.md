@@ -7,8 +7,8 @@ Here you'll find personal projects using **HTML, CSS and JavaScript**
 
 ## Repository structure
 
-- `/index.html` -> Main page to browse my web proyects.
-- `REAMDE.md` -> This file.
+- `/index.html` -> Main page to browse my web projects.
+- `README.md` -> This file.
 - `LICENSE` -> MIT license.
 
 > Each folder has its own `index.html`, `styles.css` and `script.js`
@@ -26,14 +26,11 @@ Each project is stored in its own folder
 - `rock-paper-scissors` -> Folder of the fifth project.
 - `school-simulator` -> Folder of the sixth project.
 - `usd-to-ars` -> Folder of the seventh project.
-- `todo-React` -> Folder of the eighth project.
-- `irregular-verbs-js` -> Folder of the ninth project.
-- `router-buttons` -> Folder of the tenth project.
-- `react-math` -> Folder of the eleventh project.
+- `irregular-verbs-js` -> Folder of the eight project.
 
 ---
 
-## Tecnologies used in the repository
+## Technologies used in the repository
 
 - HTML 5
 - CSS3 
@@ -44,7 +41,7 @@ Each project is stored in its own folder
 
 ## License
 
-This proyect is under [MIT license](LICENSE)
+This project is under [MIT license](LICENSE)
 
 ---
 
