@@ -35,7 +35,6 @@ Each project is stored in its own folder
 - HTML 5
 - CSS3 
 - JavaScript with DOM.
-- React 
 
 ---
 
